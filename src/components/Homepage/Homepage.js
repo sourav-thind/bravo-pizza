@@ -14,7 +14,7 @@ const Homepage = () => {
   return (
     <React.Fragment>
       <Hero />
-      <WelcomeSection />
+      {/* <WelcomeSection /> */}
       {/* <ContactUsLanding />
       <ContactLanding />
       <ScrollButton /> */}
