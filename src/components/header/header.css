@@ -1,6 +1,6 @@
 header {
     height: 4rem;
-    background-color: var(--light-black);
+    background-color: var(--main-bg-light);
     position: sticky;
     position: -webkit-sticky;
     z-index: 999;
@@ -19,18 +19,21 @@ header {
     width: 6rem;
     margin:0px;
     padding: 0;
+    color: var(--main-text-red)
 }
 .logo {
     width: 50%;
     height: auto;
     transition: all ease-in-out 0.2s;
     margin: 0px;
+    color: var(--main-text-red)
 }
 .h1 {
     font-size: 1.2rem;
     font-family: var(--josefin-font);
     line-height: 1.2rem;
     letter-spacing: 2px;
+    color: var(--main-text-orange)
 }
 .logo-styling h1 span {
     display: block;
@@ -60,6 +63,7 @@ header {
 }
 .header__nav__menu a {
     transition: all ease-in-out 0.2s;
+    color: black
 }
 /* Login & Cart */
 .login-and-cart {
@@ -103,7 +107,7 @@ header {
     overflow-x: hidden;
 }
 .hero__info span {
-    color: var(--pizza-red);
+    color: var(--main-text-red);
     font-family: var(--nothing-font);
     font-size: 2rem;
 }
@@ -112,7 +116,7 @@ header {
     text-transform: uppercase;
     font-size: 2rem;
     line-height: 3rem;
-    color: var(--white);
+    color: var(--main-text-orange);
 }
 
 .hero__info p {
@@ -160,7 +164,7 @@ header {
         transition: all ease-in-out 0.3s;
     }
     .header__nav__menu a:hover {
-        color: var(--pizza-red);
+        color: var(--main-text-red)
     }
     .logo:hover {
         transform: rotate(30deg);
@@ -178,21 +182,8 @@ header {
         border-color: rgba(255, 255, 255, 0.637);
         background-color: rgba(255, 255, 255, 0.637);
     }
-    .login-and-cart a:hover {
-        background-color: var(--pizza-red);
-        border-color: var(--pizza-red);
-        color: var(--white);
-        opacity: 0.5;
-        -moz-transition: all ease-in-out 0.3s;
-        -o-transition: all ease-in-out 0.3s;
-        -webkit-transition: all ease-in-out 0.3s;
-        -ms-transition: all ease-in-out 0.3s;
-        transition: all ease-in-out 0.3s;
-    }
-    .cart-btn:hover {
-        opacity: 0.8;
-        color: var(--light-black) !important;
-    }
+   
+    
 }
 
 @media screen and (min-width: 1025px) {
