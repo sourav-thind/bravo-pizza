@@ -7,27 +7,19 @@ import { NavLink } from 'react-router-dom'
 import ResetLocation from '../../helpers/ResetLocation'
 
 
-const Header = ({ 
+const Header = ({
   showModal,
   isModalActive,
   hideMenu, }) => {
   return (
     <header>
       <nav className="header__nav flex-container flex-row txt-center">
-        <NavLink
-          onClick={() => {
-            ResetLocation()
-            hideMenu()
-          }}
-          to="/"
-          className="logo-styling flex-container flex-row txt-center txt-white"
+        <NavLink onClick={() => {
+          ResetLocation()
+          hideMenu()
+        }} to="/" className="logo-styling flex-container flex-row txt-center txt-white"
         >
-          <img
-
-            className="logo"
-            src={logo}
-            alt="Bravo Pizza logo"
-          />
+          <img className="logo" src={logo} alt="Bravo Pizza logo" />
           <h1>
             Bravo <span>Pizza</span>
           </h1>
@@ -75,7 +67,7 @@ const Header = ({
           </li>
           <li>
             <NavLink
-              onClick={() => {
+              onClick={()  => {
                 ResetLocation()
                 hideMenu()
               }}
