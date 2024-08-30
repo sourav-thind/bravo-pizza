@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+
+import React, { useState, useEffect } from 'react';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import Header from './components/header/Header.js';
 import './App.css';
+import Homepage from './components/Homepage/Homepage.js';
 
 function App() {
+  const [isModalActive, setIsModalActive] = useState(false);
+
+  const showModal = () => {
+    setIsModalActive(!isModalActive);
+  };
+  const hideMenu = () => {
+    setIsModalActive(false);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<BrowserRouter>
+    <Header showModal={showModal} isModalActive={isModalActive} hideMenu={hideMenu} />
+    <Routes>
+        <Route path="/" element={<Homepage />} />
+    </Routes>
+</BrowserRouter>
   );
 }
 
