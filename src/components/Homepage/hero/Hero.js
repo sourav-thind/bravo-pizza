@@ -46,14 +46,14 @@ const Hero = () => {
           </p>
         </motion.div>
 
-        <div className="hero__interaction flex-container flex-row">
+        {/* <div className="hero__interaction flex-container flex-row">
           <Link className="passive-button-style" to="/blog">
             Read Blog
           </Link>
           <Link className="passive-button-style  " to="/menu">
             View Menu
           </Link>
-        </div>
+        </div> */}
       </section>
 
     </section>

@@ -15,9 +15,9 @@ const Homepage = () => {
     <React.Fragment>
       <Hero />
       <WelcomeSection />
-      <ContactUsLanding />
+      {/* <ContactUsLanding />
       <ContactLanding />
-      <ScrollButton />
+      <ScrollButton /> */}
     </React.Fragment>
   );
 }
