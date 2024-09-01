@@ -6,18 +6,25 @@ import WelcomeSection from "./welcome/WelcomeSection";
 import ResetLocation from "../../helpers/ResetLocation";
 import ContactLanding from "./contact-info/ContactLanding"
 
-const Homepage = () => {
+const Homepage = ({
+  showModal,
+  isModalActive,
+  hideMenu, }) => {
   useEffect(() => {
     document.title = "Pizza Time";
     ResetLocation();
   }, []);
+
+
   return (
     <React.Fragment>
-      <Hero />
+
+      <Hero showModal={showModal} isModalActive={isModalActive} hideMenu={hideMenu}/>
       <WelcomeSection />
-      <ContactUsLanding />
-      {/* <ContactLanding />
-      <ScrollButton /> */}
+
+      <ContactLanding />
+      <ScrollButton /> 
+      
     </React.Fragment>
   );
 }

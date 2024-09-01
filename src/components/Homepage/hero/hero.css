@@ -1,12 +1,15 @@
 
 .homepage__hero {
-    height: 90vh;
+    height: 100vh;
     position: relative;
     z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    top: -6rem;
+    padding:0;
+    margin:0;
 }
 .hero__video {
     display: none;
@@ -28,4 +31,127 @@
     backdrop-filter: blur(3px);
     top: 0;
     z-index: 3;
+}
+
+
+.hero__info {
+    padding: 1rem;
+}
+.hero__info {
+    position: absolute;
+    z-index: 4;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center;
+    overflow-x: hidden;
+}
+.hero__info span {
+    color: var(--main-text-red);
+    font-family: var(--nothing-font);
+    font-size: 2rem;
+}
+
+.hero__info h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: var(--main-text-orange);
+}
+
+.hero__info p {
+    font-size: 1rem;
+}
+
+.hero__interaction {
+    gap: 1.3rem;
+    box-sizing: content-box;
+}
+
+.hero__interaction a:first-child {
+    color: var(--light-black);
+    background-color: var(--yellow);
+    border: 1px solid transparent;
+}
+
+.hero__interaction a:last-child {
+    border-width: 1px;
+    border-color: var(--transparent-button);
+    background-color: var(--transparent-button);
+    color: var(--light-black);
+}
+.hero__interaction a:last-child,
+.hero__interaction a:first-child,
+.header__nav__menu a,
+.logo,
+.login-and-cart .cart-btn {
+    -moz-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+@media screen and (hover: hover) {
+    .header__nav__menu a:hover,
+    .logo:hover,
+    .hero__interaction a:last-child:hover,
+    .hero__interaction a:first-child:hover {
+        -moz-transition: all ease-in-out 0.3s;
+        -o-transition: all ease-in-out 0.3s;
+        -webkit-transition: all ease-in-out 0.3s;
+        -ms-transition: all ease-in-out 0.3s;
+        transition: all ease-in-out 0.3s;
+    }
+    .header__nav__menu a:hover {
+        color: var(--main-text-red)
+    }
+    .logo:hover {
+        transform: rotate(30deg);
+    }
+
+    .hero__interaction a:last-child:hover {
+        color: var(--light-black);
+        background-color: var(--yellow);
+        border: 1px solid transparent;
+    }
+    .hero__interaction a:first-child:hover {
+        border: 1px solid var(--yellow);
+        color: var(--light-black);
+        background-color: transparent;
+        border-color: rgba(255, 255, 255, 0.637);
+        background-color: rgba(255, 255, 255, 0.637);
+    }
+   
+    
+}
+
+@media screen and (min-width: 1025px) {
+    .header__nav__menu {
+        display: flex;
+    }
+    .hero__info h1 {
+        font-size: 2.5rem;
+    }
+    .header__nav__hamburger {
+        display: none;
+    }
+    .header__nav {
+        width: 100%;
+        z-index: 999;
+    }
+
+    .hero__info p {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .logo-styling {
+        gap: 1rem;
+    }
+    .logo {
+        width: 80%;
+    }
+    .logo-styling h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
 }

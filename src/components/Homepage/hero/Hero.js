@@ -5,7 +5,15 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import HeroVideo from '../../../assets/images/hero/hero-bg.mp4';
 import HeroVideo_375 from '../../../assets/images/hero/hero-bg-375.mp4';
 import "./hero.css"
-const Hero = () => {
+
+import logo from '../../../assets/images/logo.png'
+import openMenu from '../../../assets/images/open-menu.svg'
+import closeMenu from '../../../assets/images/close-menu.svg'
+import { NavLink } from 'react-router-dom'
+import ResetLocation from '../../../helpers/ResetLocation'
+const Hero = (showModal,
+  isModalActive,
+  hideMenu) => {
   const [isLoading, setIsLoading] = useState(true);
   const videoRef = useRef(null);
 
@@ -25,6 +33,7 @@ const Hero = () => {
   }, []);
   return (
     <section className="homepage__hero">
+
       <video ref={videoRef} autoPlay loop muted playsInline preload="none" width="375" className={`hero__video ${isLoading ? '' : 'loaded'}`}>
         <source src={HeroVideo_375} type="video/mp4" media="(max-width: 1024px)" />
         <source src={HeroVideo} type="video/mp4" media="(min-width: 1025px)" />
@@ -46,16 +55,9 @@ const Hero = () => {
           </p>
         </motion.div>
 
-        {/* <div className="hero__interaction flex-container flex-row">
-          <Link className="passive-button-style" to="/blog">
-            Read Blog
-          </Link>
-          <Link className="passive-button-style  " to="/menu">
-            View Menu
-          </Link>
-        </div> */}
+        
       </section>
-
+         
     </section>
 
   );

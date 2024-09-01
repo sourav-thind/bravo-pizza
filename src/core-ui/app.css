@@ -5,14 +5,10 @@
   --poppins-font: "Poppins", sans-serif;
   --josefin-font: "Sansita Swashed", cursive;
   --nothing-font: "Nothing You Could Do", cursive;
-  --white: #ffffff;
-  --light-gray: #919191;
+  --main-bg-color: #eef0d9;
   --whitish-gray: #bfbfbf;
   --light-black: #121618;
   --lightish-black: #171b1d;
-  --pizza-yellow: #ffe600;
-  --yellow: #fac564;
-  --green: #1d9f55;
   --pizza-red: #ff6240;
   --pizza-red-light: #f87d62 0;
   --transition: all ease-in-out 0.3s;

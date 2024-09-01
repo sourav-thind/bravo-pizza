@@ -16,9 +16,9 @@ function App() {
   };
   return (
 <BrowserRouter>
-    <Header showModal={showModal} isModalActive={isModalActive} hideMenu={hideMenu} />
+    <Header  showModal={showModal} isModalActive={isModalActive} hideMenu={hideMenu} />
     <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<Homepage showModal={showModal} isModalActive={isModalActive} hideMenu={hideMenu} />} />
     </Routes>
 </BrowserRouter>
   );

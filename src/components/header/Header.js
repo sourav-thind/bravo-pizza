@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useState, useEffect} from 'react'
 import './header.css'
 import logo from '../../assets/images/logo.png'
 import openMenu from '../../assets/images/open-menu.svg'
@@ -11,8 +11,24 @@ const Header = ({
   showModal,
   isModalActive,
   hideMenu, }) => {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > 600) {
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
   return (
-    <header>
+    <header className={isScrolled ? 'header scrolled' : 'header'}>
       <nav className="header__nav flex-container flex-row txt-center">
         <NavLink onClick={() => {ResetLocation() 
         hideMenu()}} to="/" className="logo-styling flex-container flex-row txt-center "

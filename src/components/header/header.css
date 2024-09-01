@@ -1,13 +1,15 @@
 header {
     height: 4rem;
-    background-color: var(--main-bg-light);
+    background-color: transparent;
     position: sticky;
-    position: -webkit-sticky;
+    top:0;
     z-index: 999;
     padding: 1rem;
- 
-
+    transition: background-color 0.3s ease-in-out;
 }
+.scrolled {
+    background-color: #eef0d9;
+  }
 .header__nav {
     display: flex;
     flex-direction: row;
@@ -22,11 +24,11 @@ header {
     color: var(--main-text-red)
 }
 .logo {
-    width: 50%;
+    width: 80%;
     height: auto;
     transition: all ease-in-out 0.2s;
     margin: 0px;
-    color: var(--main-text-red)
+    
 }
 .h1 {
     font-size: 1.2rem;
@@ -49,13 +51,12 @@ header {
     align-items: center;
 }
 .header__nav__menu.active {
-    position: absolute;
+    position: sticky;
     display: flex;
     flex-direction: column;
     top: 100%;
     left: 0;
     z-index: 99;
-    background-color: var(--light-black);
     padding-top: 2rem;
     padding-bottom: 2rem;
     width: 100%;
@@ -64,24 +65,6 @@ header {
 .header__nav__menu a {
     transition: all ease-in-out 0.2s;
     color: black
-}
-/* Login & Cart */
-.login-and-cart {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    align-items: center;
-}
-
-.cart-btn {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    font-weight: 600;
-}
-.cart-btn img {
-    width: 1.5rem;
-    height: 1.5rem;
 }
 
 .header__nav__hamburger {
@@ -94,51 +77,6 @@ header {
 }
 .header__nav__menu.active .header__nav__hamburger {
     content: url("../../assets/images/close-btn.svg");
-}
-.hero__info {
-    padding: 1rem;
-}
-.hero__info {
-    position: absolute;
-    z-index: 4;
-    justify-content: center;
-    gap: 1.5rem;
-    align-items: center;
-    overflow-x: hidden;
-}
-.hero__info span {
-    color: var(--main-text-red);
-    font-family: var(--nothing-font);
-    font-size: 2rem;
-}
-
-.hero__info h1 {
-    text-transform: uppercase;
-    font-size: 2rem;
-    line-height: 3rem;
-    color: var(--main-text-orange);
-}
-
-.hero__info p {
-    font-size: 1rem;
-}
-
-.hero__interaction {
-    gap: 1.3rem;
-    box-sizing: content-box;
-}
-
-.hero__interaction a:first-child {
-    color: var(--light-black);
-    background-color: var(--yellow);
-    border: 1px solid transparent;
-}
-
-.hero__interaction a:last-child {
-    border-width: 1px;
-    border-color: var(--transparent-button);
-    background-color: var(--transparent-button);
-    color: var(--light-black);
 }
 .hero__interaction a:last-child,
 .hero__interaction a:first-child,

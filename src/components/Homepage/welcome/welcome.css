@@ -1,5 +1,7 @@
 .homepage__welcome {
     overflow: hidden;
+    background-image: url("../../../assets/images/landing-bg.webp");
+
 }
 /* Section 2 */
 .welcome__cover {
