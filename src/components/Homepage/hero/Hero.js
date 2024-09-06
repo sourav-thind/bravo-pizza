@@ -35,7 +35,7 @@ const Hero = (showModal,
     <section className="homepage__hero">
 
       <video ref={videoRef} autoPlay loop muted playsInline preload="none" width="375" className={`hero__video ${isLoading ? '' : 'loaded'}`}>
-        <source src={HeroVideo_375} type="video/mp4" media="(max-width: 1024px)" />
+        <source src={HeroVideo} type="video/mp4" media="(max-width: 1024px)" />
         <source src={HeroVideo} type="video/mp4" media="(min-width: 1025px)" />
         Your browser does not support the video tag.
       </video>

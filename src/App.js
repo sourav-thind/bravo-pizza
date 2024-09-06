@@ -4,6 +4,7 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Header from './components/header/Header.js';
 import './App.css';
 import Homepage from './components/Homepage/Homepage.js';
+import Footer from './components/footer/Footer.js';
 
 function App() {
   const [isModalActive, setIsModalActive] = useState(false);
@@ -20,6 +21,7 @@ function App() {
     <Routes>
         <Route path="/" element={<Homepage showModal={showModal} isModalActive={isModalActive} hideMenu={hideMenu} />} />
     </Routes>
+    <Footer/>
 </BrowserRouter>
   );
 }

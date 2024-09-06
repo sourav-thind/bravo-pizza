@@ -73,7 +73,7 @@ const ContactLanding = () => {
           <h4>Feedback and Suggestions:</h4>
           <p>We value your feedback and are always striving to improve. If you have any suggestions, comments, or ideas on how we can enhance our offerings, please let us know.</p>
           <ul>
-            <li>- Email: ??</li>
+            <li>- Email: Info.bravopizza@gmail.com</li>
           </ul>
         </section>
         <section>
