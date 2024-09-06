@@ -5,13 +5,14 @@ import ContactUsLanding from "./company-info/ContactUsLanding";
 import WelcomeSection from "./welcome/WelcomeSection";
 import ResetLocation from "../../helpers/ResetLocation";
 import ContactLanding from "./contact-info/ContactLanding"
+import PizzaReviewSlider from "./PizzaReviewSlider/PizzaReviewSlider";
 
 const Homepage = ({
   showModal,
   isModalActive,
   hideMenu, }) => {
   useEffect(() => {
-    document.title = "Pizza Time";
+    document.title = "Bravo Pizza";
     ResetLocation();
   }, []);
 
@@ -21,8 +22,8 @@ const Homepage = ({
 
       <Hero showModal={showModal} isModalActive={isModalActive} hideMenu={hideMenu}/>
       <WelcomeSection />
-
       <ContactLanding />
+      <PizzaReviewSlider/>
       <ScrollButton /> 
       
     </React.Fragment>

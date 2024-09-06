@@ -1,0 +1,91 @@
+
+  
+ 
+ body {
+    margin: 0;
+    padding: 0;
+    width:100%;
+    font-family: 'Arial', sans-serif;
+  }
+
+.slider-container {
+    width: 90%; 
+    max-width: 100%; 
+    margin: 0 auto; 
+    padding: 5% 0;
+    color: black;
+   
+
+  }
+  
+  .slider-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--main-text-orange);
+    margin-bottom: 20px;
+  }
+  
+  .review-card {
+ 
+    border-radius: 5px;
+    height:300px;
+    padding: 20px;
+    margin: 0 10px;
+    width:90%;
+  }
+  
+  .card-content {
+    text-align: center;
+    border: 3px solid var(--main-text-orange);; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(255, 221, 2, 0.1);;
+    padding: 20px;
+    margin: 0 10px;
+    background-color: var(--main-bg-light);
+    height:90% ;
+    width:75%;
+  }
+  
+  .review-card h3 {
+    margin: 10px 0;
+  color: var(--main-text-red);
+  font-weight: 600;
+  font-size: 1.5rem;
+  }
+
+  .reviewText{
+    font-size:1.2rem;
+  text-align: justify;
+
+  }
+
+  .ratings{
+    margin-top:10px;
+  }
+  
+
+  @media only screen and (min-width: 768px) {
+   
+  
+    .review-card {
+      width: 300px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .review-card {
+      width: 100%;
+    }
+  }
+  
+
+
+  
+.slick-prev {
+    left:-5%;
+    z-index: 1; 
+  }
+  .slick-next {
+    right:-5%;
+    z-index: 1; 
+  }

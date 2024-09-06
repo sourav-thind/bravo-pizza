@@ -1,16 +1,10 @@
-import { Link } from "react-router-dom";
 import React, { useEffect, useRef, useState } from 'react'
 import { motion } from "framer-motion";
 import "react-alice-carousel/lib/alice-carousel.css";
 import HeroVideo from '../../../assets/images/hero/hero-bg.mp4';
-import HeroVideo_375 from '../../../assets/images/hero/hero-bg-375.mp4';
 import "./hero.css"
+import ClipLoader from "react-spinners/ClipLoader";
 
-import logo from '../../../assets/images/logo.png'
-import openMenu from '../../../assets/images/open-menu.svg'
-import closeMenu from '../../../assets/images/close-menu.svg'
-import { NavLink } from 'react-router-dom'
-import ResetLocation from '../../../helpers/ResetLocation'
 const Hero = (showModal,
   isModalActive,
   hideMenu) => {
@@ -23,7 +17,7 @@ const Hero = (showModal,
     if (video) {
       const timeoutId = setTimeout(() => {
         setIsLoading(false);
-      }, 2000);
+      }, 1);
 
       return () => {
         clearTimeout(timeoutId);
@@ -33,13 +27,13 @@ const Hero = (showModal,
   }, []);
   return (
     <section className="homepage__hero">
-
-      <video ref={videoRef} autoPlay loop muted playsInline preload="none" width="375" className={`hero__video ${isLoading ? '' : 'loaded'}`}>
+     
+      <video ref={videoRef} autoPlay loop muted playsInline  width="375" className={`hero__video ${isLoading ? '' : 'loaded'}`}>
         <source src={HeroVideo} type="video/mp4" media="(max-width: 1024px)" />
         <source src={HeroVideo} type="video/mp4" media="(min-width: 1025px)" />
         Your browser does not support the video tag.
       </video>
-
+  
 
       <section className="hero__info flex-container flex-column txt-center pop-font txt-white">
         <motion.div
