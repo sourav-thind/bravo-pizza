@@ -41,9 +41,9 @@ const WelcomeSection = () => {
         whileInView={"whileInView"}>
        
         <h2 className="txt-white">
-          Welcome to <span>Bravo Pizza</span> restaurant
+          Welcome to <span>Bravo Pizza</span> <h5> Greek and Itallian restaurant</h5> 
         </h2>
-        <h3> Greek and Itallian Restaurant</h3>
+      
         <p>
         At Bravo Pizza, we elevate every slice to a new level of deliciousness! Our secret to success? We know exactly what our customers crave and turn those desires into unforgettable taste experiences. Freshness, originality, and top-tier quality are at the heart of everything we do. With affordable prices, convenient locations and your love, satisfying your pizza cravings has never been easier. Whether you're pre-ordering for yourself or planning a corporate event, Bravo Pizza is here to serve with options that fit every need. At Bravo Pizza, we care about you because it's your love for pizza that makes us special! </p>
       </motion.section>

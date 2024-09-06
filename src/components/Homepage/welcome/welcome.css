@@ -1,6 +1,6 @@
 .homepage__welcome {
     overflow: hidden;
-    background-image: url("../../../assets/images/landing-bg.webp");
+    
 
 }
 /* Section 2 */
@@ -36,8 +36,10 @@
     font-size: 1.2rem;
     line-height: 2rem;
     width: 100%;
-    max-width: 730px;
+    max-width: 80%;
     margin: 0 auto;
+    text-align: justify;
+    padding:3%;
 }
 
 .welcome__info img {
@@ -49,6 +51,13 @@
     object-fit: contain;
     top: 3rem;
 }
+h5{
+   font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--main-text-red);
+    font-style: italic;
+}
+
 @media screen and (min-width: 1025px) {
     .welcome__info img {
         display: block;

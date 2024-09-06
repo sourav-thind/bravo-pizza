@@ -15,11 +15,11 @@
 
 .map-container {
     position: relative;
-    width: 70%;
-    height: 350px; /* Adjust the height as needed */
+    width: 90%;
+    height: 350px; 
     margin: 0 auto;
-    border: 2px solid #ccc; /* Optional: Add a border around the map */
-    border-radius: 10px; /* Optional: Rounded corners */
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
     overflow: hidden;
   }
   
@@ -55,10 +55,11 @@ button{
 .contact__info {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     overflow: hidden;
     font-family: var(--poppins-font);
+    text-align: justify;
 }
 .contact__info h3 {
     font-size: 2rem;
@@ -84,10 +85,13 @@ button{
     margin-top: 2rem;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 700px) {
     .homepage__contact {
         justify-content: space-evenly;
         gap: 5rem;
+    }
+    .map-container{
+        height:600px
     }
 }
 @media screen and (min-width: 1025px) {
