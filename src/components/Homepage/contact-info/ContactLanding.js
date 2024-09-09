@@ -1,9 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-//Leaflet
+
 import L from "leaflet";
-import icon from "leaflet/dist/images/marker-icon.png";
-import iconShadow from "leaflet/dist/images/marker-shadow.png";
 import { MapContainer, TileLayer } from "react-leaflet";
 import { Marker } from "react-leaflet";
 import './contact-info.css'
@@ -45,6 +43,7 @@ const ContactLanding = () => {
         maxBoundsViscosity={1.0}
         className="leaflet-container"
       >
+
 
         <TileLayer className="map"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

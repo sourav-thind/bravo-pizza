@@ -1,0 +1,62 @@
+/* Apply horizontal scroll styles only to the menu page */
+.menu-wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Hide the vertical scrollbar for the menu page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.menu-container {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory;
+  width: 100vw;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  scroll-padding: 0px 50px; /* Padding to show the next card */
+}
+
+.menu-container::-webkit-scrollbar {
+  display: none; /* Hide horizontal scrollbar */
+}
+
+.menu-container {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.menu-page {
+  display: flex;
+  min-width: 80vw; /* Reduce width to show part of next card */
+  scroll-snap-align: center;
+  justify-content: space-around;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: scale(1.05);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-y: auto; 
+}

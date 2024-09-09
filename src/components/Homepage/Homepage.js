@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import Hero from "./hero/Hero";
 import ScrollButton from "../../helpers/ScrollBtn";
-import ContactUsLanding from "./company-info/ContactUsLanding";
 import WelcomeSection from "./welcome/WelcomeSection";
 import ResetLocation from "../../helpers/ResetLocation";
 import ContactLanding from "./contact-info/ContactLanding"
 import PizzaReviewSlider from "./PizzaReviewSlider/PizzaReviewSlider";
+import Menu from "../menu/menu";
 
 const Homepage = ({
   showModal,
@@ -22,6 +22,7 @@ const Homepage = ({
 
       <Hero showModal={showModal} isModalActive={isModalActive} hideMenu={hideMenu}/>
       <WelcomeSection />
+      <Menu/>
       <ContactLanding />
       <PizzaReviewSlider/>
       <ScrollButton /> 

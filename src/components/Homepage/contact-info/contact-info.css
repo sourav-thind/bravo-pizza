@@ -11,7 +11,9 @@
     overflow: hidden;
 }
 
-
+.h1{
+    color:white;
+}
 
 .map-container {
     position: relative;
@@ -88,10 +90,12 @@ button{
 @media screen and (max-width: 700px) {
     .homepage__contact {
         justify-content: space-evenly;
+        flex-direction: column;
         gap: 5rem;
     }
     .map-container{
-        height:600px
+        height:400px;
+        width:300px
     }
 }
 @media screen and (min-width: 1025px) {

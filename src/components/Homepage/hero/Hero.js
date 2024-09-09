@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 import "react-alice-carousel/lib/alice-carousel.css";
 import HeroVideo from '../../../assets/images/hero/hero-bg.mp4';
 import "./hero.css"
-import ClipLoader from "react-spinners/ClipLoader";
-
 const Hero = (showModal,
   isModalActive,
   hideMenu) => {
