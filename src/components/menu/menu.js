@@ -1,72 +1,144 @@
-import React from 'react';
-import './Menu.css'; // Updated CSS
+import React from "react";
+import MenuCategories from "./MenuCategories";
+import ScrollButton from "../../helpers/ScrollBtn";
+import MenuGridItem from "./MenuGridItem";
+import ReactPaginate from 'react-paginate';
+import { useState, useEffect } from "react";
+import ResetLocation from "../../helpers/ResetLocation";
+import { motion } from "framer-motion";
+import './menu.css'
+import { allProductsData } from "../../data/AllProductData";
+import Attribute from './Attribute';
+const Menu = ({ allProducts,
+  allCategories,
+  changeCategory,
+  handleAddProduct,
+  handleRemoveProduct,
+  findMenuItem
+}) => {
 
-const Menu = () => {
+  const [itemOffset, setItemOffset] = useState(0);
+  const [endOffset, setEndOffset] = useState(itemOffset + 5);
+  const [currentProducts, setcurrentProducts] = useState([...allProductsData]);
+  const [pageCountProducts, setpageCountProducts] = useState(Math.ceil(allProducts.length / 5));
+
+
+  const handlePageClick = (event) => {
+    const newOffset = (event.selected * 5) % allProducts.length;
+
+
+  };
+  const resetPagination = () => {
+    setItemOffset(0);
+    setEndOffset(5);
+  }
+
+  useEffect(() => {
+
+    setEndOffset(itemOffset + 5);
+    setcurrentProducts(allProducts.slice(itemOffset, endOffset));
+    setpageCountProducts(Math.ceil(allProductsData.length / 5));
+
+  }, [allProducts, setEndOffset, endOffset, itemOffset]);
+
+
+
+
+
+
+
+  const [selectedAttributes, setSelectedAttributes] = useState([]);
+  const [targetAttribute, setTargetAttribute] = useState('');
+
+  const handleSelectedAttributes = (attributeId, attributeValue) => {
+    setTargetAttribute(attributeValue);
+    const newSelectedAttribute = { attributeId, attributeValue };
+    setSelectedAttributes(prevAttributes => {
+      const existingAttributeIndex = prevAttributes.findIndex(
+        attribute => attribute.attributeId === newSelectedAttribute.attributeId
+      );
+      if (existingAttributeIndex !== -1) {
+        const updatedAttributes = [...prevAttributes];
+        updatedAttributes[existingAttributeIndex] = { ...newSelectedAttribute };
+        return updatedAttributes;
+      } else {
+        return [...prevAttributes, newSelectedAttribute];
+      }
+    });
+  };
+
+
+
+
+
   return (
-    <div className="menu-wrapper">
-      <div className="menu-container">
-        <div className="menu-page">
-          <div className="menu-card">
-            <h2>Chicken Dinners</h2>
-            <ul>
-              <li>Souvlaki dinner</li>
-              <li>Baklava</li>
-              <li>A taste of Greece</li>
-              <li>Super donair</li>
-              <li>Regular donair</li>
-              <li>Greek donair</li>
-              <li>Delicious donairs</li>
-            </ul>
-          </div>
-          <div className="menu-card">
-            <h2>Salads</h2>
-            <ul>
-              <li>Greek salad</li>
-              <li>Caesar salad</li>
-              <li>Chicken caesar</li>
-              <li>Greek chicken</li>
-            </ul>
-          </div>
-        </div>
+    <>
+    <div className="heading"> <h1>Menu</h1></div>
 
-        <div className="menu-page">
-          <div className="menu-card">
-            <h2>Pizza</h2>
-            <ul>
-              <li>12" pizza</li>
-              <li>Lasagna</li>
-              <li>Cheese</li>
-              <li>One topping</li>
-              <li>Two toppings</li>
-              <li>Three toppings</li>
-              <li>Works</li>
-              <li>Greek</li>
-              <li>Donair</li>
-              <li>BBQ chicken pizza</li>
-              <li>Extra cheese</li>
-              <li>Extra toppings</li>
-              <li>All meat</li>
-            </ul>
-          </div>
-        </div>
+   
+    <motion.main
+      className="menu"
+      initial={{ opacity: 0, translateX: -300 }}
+      whileInView={{ opacity: 1, translateX: 0 }}
+      exit={{ opacity: 0, translateX: -300 }}
+      transition={{ duration: 1 }}
+    >
+      <article className="menu__categories">
 
-        <div className="menu-page">
-          <div className="menu-card">
-            <h2>Pastas</h2>
-            <ul>
-              <li>Bravo house pasta</li>
-              <li>Spaghetti with meat sauce</li>
-              <li>With mushroom</li>
-              <li>With meatballs</li>
-              <li>With meatballs & mushrooms</li>
-              <li>Deluxe spaghetti</li>
-              <li>Lasagna</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+        <ul>
+          {allCategories.map((category) => (
+            <li key={category.id}>
+              <a href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  changeCategory(category.name);
+                  resetPagination();
+                }}
+              >
+                {category.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </article>
+      <article className="menu__items">
+        {currentProducts.length === 0 ? <p className="menu__not-found">No results found...</p> :
+          currentProducts.map((singleProduct) => (
+            <article className="menu-item txt-white">
+
+              <h3>{singleProduct.ItemName}</h3>
+              <p>{singleProduct.ItemIngredients}</p>
+              {singleProduct.attributes.length === 0 ? null :
+                singleProduct.attributes?.map(attribute => (
+                  <Attribute
+                    key={attribute.id}
+                    className="menu-item__attributes"
+                    handleSelectedAttributes={handleSelectedAttributes}
+                    attribute={attribute}
+                    targetAttribute={targetAttribute}
+                  />
+                ))
+              }
+
+            </article>
+          ))
+        }
+        <ScrollButton />
+      </article>
+
+      <ReactPaginate
+        className="pagination"
+        breakLabel="..."
+        nextLabel=" &#62;"
+        onPageChange={handlePageClick}
+        pageRangeDisplayed={3}
+        pageCount={pageCountProducts}
+        previousLabel="&#60;"
+        renderOnZeroPageCount={null}
+      />
+    </motion.main></>
   );
-};
+}
+
 
 export default Menu;
