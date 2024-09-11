@@ -6,7 +6,7 @@ import ResetLocation from "../../helpers/ResetLocation";
 import ContactLanding from "./contact-info/ContactLanding"
 import PizzaReviewSlider from "./PizzaReviewSlider/PizzaReviewSlider";
 import { allProductsData } from "../../data/AllProductData";
-import Menu from "../menu/Menu";
+import Menu from "./../menu/Menu";
 import { AllCategories } from "../../data/AllCategories";
 
 const Homepage = ({
