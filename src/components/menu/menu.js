@@ -1,12 +1,9 @@
 import React from "react";
-import MenuCategories from "./MenuCategories";
 import ScrollButton from "../../helpers/ScrollBtn";
-import MenuGridItem from "./MenuGridItem";
 import ReactPaginate from 'react-paginate';
-import { useState, useEffect } from "react";
-import ResetLocation from "../../helpers/ResetLocation";
+import { useState, useEffect } from "react"; 
 import { motion } from "framer-motion";
-import './menu.css'
+import '../menu/menu.css'
 import { allProductsData } from "../../data/AllProductData";
 import Attribute from './Attribute';
 const Menu = ({ allProducts,
