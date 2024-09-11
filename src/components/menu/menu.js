@@ -3,7 +3,7 @@ import ScrollButton from "../../helpers/ScrollBtn";
 import ReactPaginate from 'react-paginate';
 import { useState, useEffect } from "react"; 
 import { motion } from "framer-motion";
-import '../menu/menu.css'
+import './Menu.css'
 import { allProductsData } from "../../data/AllProductData";
 import Attribute from './Attribute';
 const Menu = ({ allProducts,
