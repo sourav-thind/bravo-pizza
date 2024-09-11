@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-
 import Attribute from './Attribute';
-import ResetLocation from "../../helpers/ResetLocation";
+
 
 const MenuGridItem = ({ singleProduct}) => {
   const [selectedAttributes, setSelectedAttributes] = useState([]);
