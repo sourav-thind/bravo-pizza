@@ -15,26 +15,26 @@ const Menu = ({ allProducts,
 }) => {
 
   const [itemOffset, setItemOffset] = useState(0);
-  const [endOffset, setEndOffset] = useState(itemOffset + 5);
+  const [endOffset, setEndOffset] = useState(itemOffset + 9);
   const [currentProducts, setcurrentProducts] = useState([...allProductsData]);
-  const [pageCountProducts, setpageCountProducts] = useState(Math.ceil(allProducts.length / 5));
+  const [pageCountProducts, setpageCountProducts] = useState(Math.ceil(allProducts.length / 9));
 
 
   const handlePageClick = (event) => {
-    const newOffset = (event.selected * 5) % allProducts.length;
+    const newOffset = (event.selected * 9) % allProducts.length;
 
 
   };
   const resetPagination = () => {
     setItemOffset(0);
-    setEndOffset(5);
+    setEndOffset(9);
   }
 
   useEffect(() => {
 
-    setEndOffset(itemOffset + 5);
+    setEndOffset(itemOffset + 9);
     setcurrentProducts(allProducts.slice(itemOffset, endOffset));
-    setpageCountProducts(Math.ceil(allProductsData.length / 5));
+    setpageCountProducts(Math.ceil(allProductsData.length / 9));
 
   }, [allProducts, setEndOffset, endOffset, itemOffset]);
 
@@ -123,16 +123,7 @@ const Menu = ({ allProducts,
         <ScrollButton />
       </article>
 
-      <ReactPaginate
-        className="pagination"
-        breakLabel="..."
-        nextLabel=" &#62;"
-        onPageChange={handlePageClick}
-        pageRangeDisplayed={3}
-        pageCount={pageCountProducts}
-        previousLabel="&#60;"
-        renderOnZeroPageCount={null}
-      />
+     
     </motion.main></>
   );
 }

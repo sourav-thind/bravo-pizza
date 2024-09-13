@@ -1,28 +1,157 @@
 export const allProductsData = [
   {
-    id: 'souvlaki-dinner',
-    ItemName: 'Souvlaki Dinner',
-    ItemIngredients: 'Chicken served with Greek salad, rice, garlic toast',
-    Category: 'Greek',
+    id: 'cheese-pizza',
+    ItemName: 'Cheese Pizza',
+    ItemIngredients: 'Pizza dough, pizza sauce, mozzarella cheese',
+    Category: 'Pizza',
     attributes: [
       {
-        id: 'portion-size',
-        name: 'Portion Size',
+        id: 'size',
+        name: 'Size',
         attributeOptions: [
-          { id: 'regular', value: 'Regular' },
-          { id: 'large', value: 'Large' },
+          { id: '9"', value: '9"' },
+          { id: '12"', value: '12"' },
+          { id: '14"', value: '14"' },
+	{ id: '16"', value: '16"' },
+
         ],
       },
     ],
   },
   {
-    id: 'baklava',
-    ItemName: 'Baklava',
-    ItemIngredients: 'Layered pastry with honey and nuts',
-    Category: 'Dessert',
-    attributes: [],
-  },
+    id: 'one-topping-pizza',
+    ItemName: 'One Topping Pizza',
+    ItemIngredients: 'Pizza dough, pizza sauce, mozzarella cheese, one topping of your choice',
+    Category: 'Pizza',
+    attributes: [
+      {
+        id: 'size',
+        name: 'Size',
+        attributeOptions: [
+          { id: '9"', value: '9"' },
+          { id: '12"', value: '12"' },
+          { id: '14"', value: '14"' },
+	{ id: '16"', value: '16"' },
 
+        ],
+      },
+    ],
+  },
+  {
+    id: 'two-topping-pizza',
+    ItemName: 'Two Topping Pizza',
+    ItemIngredients: 'Pizza dough, pizza sauce, mozzarella cheese, two toppings of your choice',
+    Category: 'Pizza',
+    attributes: [
+      {
+        id: 'size',
+        name: 'Size',
+        attributeOptions: [
+          { id: '9"', value: '9"' },
+          { id: '12"', value: '12"' },
+          { id: '14"', value: '14"' },
+	{ id: '16"', value: '16"' },
+
+        ],
+      },
+    ],
+  },
+  {
+    id: 'three-topping-pizza',
+    ItemName: 'Three Topping Pizza',
+    ItemIngredients: 'Pizza dough, pizza sauce, mozzarella cheese, three toppings of your choice',
+    Category: 'Pizza',
+    attributes: [
+      {
+        id: 'size',
+        name: 'Size',
+        attributeOptions: [
+          { id: '9"', value: '9"' },
+          { id: '12"', value: '12"' },
+          { id: '14"', value: '14"' },
+	{ id: '16"', value: '16"' },
+
+        ],
+      },
+    ],
+  },
+  {
+    id: 'bbq-chicken-pizza',
+    ItemName: 'BBQ Chicken Pizza',
+    ItemIngredients: 'Pizza dough, BBQ sauce, mozzarella cheese, grilled chicken, red onions, cilantro',
+    Category: 'Pizza',
+    attributes: [
+      {
+        id: 'size',
+        name: 'Size',
+        attributeOptions: [
+          { id: '9"', value: '9"' },
+          { id: '12"', value: '12"' },
+          { id: '14"', value: '14"' },
+	{ id: '16"', value: '16"' },
+
+        ],
+      },
+    ],
+  },
+  {
+    id: 'works-pizza',
+    ItemName: 'Works Pizza',
+    ItemIngredients: 'Pizza dough, pizza sauce, mozzarella cheese, pepperoni, hamburger, mushroom, green peppers, bacon',
+    Category: 'Pizza',
+    attributes: [
+      {
+        id: 'size',
+        name: 'Size',
+        attributeOptions: [
+          { id: '9"', value: '9"' },
+          { id: '12"', value: '12"' },
+          { id: '14"', value: '14"' },
+	{ id: '16"', value: '16"' },
+
+        ],
+      },
+    ],
+  },
+  {
+    id: 'greek-pizza',
+    ItemName: 'Greek Pizza',
+    ItemIngredients: 'Pizza dough, pizza sauce, mozzarella cheese, feta, mushroom, black olives, onions, tomato',
+    Category: 'Pizza',
+    attributes: [
+      {
+        id: 'size',
+        name: 'Size',
+        attributeOptions: [
+          { id: '9"', value: '9"' },
+          { id: '12"', value: '12"' },
+          { id: '14"', value: '14"' },
+	{ id: '16"', value: '16"' },
+
+        ],
+      },
+    ],
+  },
+  {
+    id: 'donair-pizza',
+    ItemName: 'Donair Pizza',
+    ItemIngredients: 'Pizza dough, donair sauce, donair meat, tomato, onion',
+    Category: 'Pizza',
+    attributes: [
+      {
+        id: 'size',
+        name: 'Size',
+        attributeOptions: [
+          { id: '9"', value: '9"' },
+          { id: '12"', value: '12"' },
+          { id: '14"', value: '14"' },
+	{ id: '16"', value: '16"' },
+
+        ],
+      },
+    ],
+  },
+ 
   {
     id: 'super-donair',
     ItemName: 'Super Donair',
@@ -33,7 +162,7 @@ export const allProductsData = [
         id: 'size',
         name: 'Size',
         attributeOptions: [
-          { id: 'small', value: 'Small' },
+          { id: 'regular', value: 'regular' },
           { id: 'large', value: 'Large' },
         ],
       },
@@ -58,13 +187,13 @@ export const allProductsData = [
     id: 'greek-salad',
     ItemName: 'Greek Salad',
     ItemIngredients: 'Tomatoes, cucumbers, olives, feta cheese, olive oil',
-    Category: 'Salads',
+    Category: 'Salad',
     attributes: [
       {
         id: 'size',
         name: 'Size',
         attributeOptions: [
-          { id: 'small', value: 'Small' },
+          { id: 'regular', value: 'regular' },
           { id: 'medium', value: 'Medium' },
           { id: 'large', value: 'Large' },
         ],
@@ -75,12 +204,12 @@ export const allProductsData = [
     id: 'caesar-salad',
     ItemName: 'Caesar Salad',
     ItemIngredients: 'Romaine lettuce, croutons, Parmesan cheese, Caesar dressing',
-    Category: 'Salads',
+    Category: 'Salad',
     attributes: [ {
       id: 'size',
       name: 'Size',
       attributeOptions: [
-        { id: 'small', value: 'Small' },
+        { id: 'regular', value: 'regular' },
         { id: 'medium', value: 'Medium' },
         { id: 'large', value: 'Large' },
       ],
@@ -90,13 +219,13 @@ export const allProductsData = [
     id: 'chicken-ceaser',
     ItemName: 'Chicked Ceaser',
     ItemIngredients: 'Chicked, lettuce, cheese, Caesar dressing',
-    Category: 'Salads',
+    Category: 'Salad',
     attributes: [
       {
         id: 'size',
         name: 'Size',
         attributeOptions: [
-          { id: 'small', value: 'Small' },
+          { id: 'regular', value: 'regular' },
           { id: 'medium', value: 'Medium' },
           { id: 'large', value: 'Large' },
         ],
@@ -107,81 +236,19 @@ export const allProductsData = [
     id: 'greek-chicked',
     ItemName: 'Greek Chicked',
     ItemIngredients: 'Chicken,  lettuce, croutons, Parmesan cheese, Tomatoes, cucumbers, olives, feta cheese ',
-    Category: 'Salads',
+    Category: 'Salad',
     attributes: [ {
       id: 'size',
       name: 'Size',
       attributeOptions: [
-        { id: 'small', value: 'Small' },
+        { id: 'regular', value: 'regular' },
         { id: 'medium', value: 'Medium' },
         { id: 'large', value: 'Large' },
       ],
     }],
   },
-  {
-    id: 'cheese-pizza',
-    ItemName: 'Cheese Pizza',
-    ItemIngredients: 'Pizza dough, pizza sauce, mozzarella cheese',
-    Category: 'Pizza',
-    attributes: [
-      {
-        id: 'size',
-        name: 'Size',
-        attributeOptions: [
-          { id: 'small', value: 'Small', slices: '6' },
-          { id: 'medium', value: 'Medium', slices: '8' },
-          { id: 'large', value: 'Large', slices: '10' },
-        ],
-      },
-    ],
-  },
-  {
-    id: 'one-topping-pizza',
-    ItemName: 'One Topping Pizza',
-    ItemIngredients: 'Pizza dough, pizza sauce, one topping of your choice',
-    Category: 'Pizza',
-    attributes: [
-      {
-        id: 'topping',
-        name: 'Topping',
-        attributeOptions: [
-          { id: 'small', value: 'Small', slices: '6' },
-          { id: 'medium', value: 'Medium', slices: '8' },
-          { id: 'large', value: 'Large', slices: '10' },
-        ],
-      },
-    ],
-  },
-  {
-    id: 'lasagna',
-    ItemName: 'Lasagna',
-    ItemIngredients: 'Layers of pasta, meat sauce, mozzarella cheese',
-    Category: 'Pasta',
-    attributes: [
-      {
-        id: 'size',
-        name: 'Size',
-        attributeOptions: [
-          { id: 'regular', value: 'Regular' },
-          { id: 'family', value: 'Family Size' },
-        ],
-      },
-    ],
-  },
-  {
-    id: 'spaghetti-with-meat-sauce',
-    ItemName: 'Spaghetti with Meat Sauce',
-    ItemIngredients: 'Spaghetti pasta with homemade meat sauce',
-    Category: 'Pasta',
-    attributes: [],
-  },
-  {
-    id: 'gnocchi-with-cheese',
-    ItemName: 'Gnocchi with Cheese',
-    ItemIngredients: 'Gnocchi pasta with cheese sauce',
-    Category: 'Pasta',
-    attributes: [],
-  },
+ 
+
   {
     id: 'garlic-cheese-fingers',
     ItemName: 'Garlic Cheese Fingers',
@@ -196,5 +263,90 @@ export const allProductsData = [
     Category: 'Sides',
     attributes: [],
   },
-  // Add more products here following the same structure...
+  {
+    id: 'spaghetti-meat-sauce',
+    ItemName: 'Spaghetti with Meat Sauce',
+    ItemIngredients: 'Spaghetti, tomato sauce, seasoned ground beef',
+    Category: 'Pasta',
+    attributes: [
+      {
+        id: 'size',
+        name: 'Size',
+        attributeOptions: [
+          { id: 'regular', value: 'Regular' },
+          { id: 'large', value: 'Large' },
+          { id: 'extra-large', value: 'Extra Large' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'spaghetti-mushroom',
+    ItemName: 'Spaghetti with Mushroom',
+    ItemIngredients: 'Spaghetti, tomato sauce, mushrooms',
+    Category: 'Pasta',
+    attributes: [
+      {
+        id: 'size',
+        name: 'Size',
+        attributeOptions: [
+          { id: 'regular', value: 'Regular' },
+          { id: 'large', value: 'Large' },
+          { id: 'extra-large', value: 'Extra Large' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'spaghetti-meatballs',
+    ItemName: 'Spaghetti with Meatballs',
+    ItemIngredients: 'Spaghetti, tomato sauce, meatballs',
+    Category: 'Pasta',
+    attributes: [
+      {
+        id: 'size',
+        name: 'Size',
+        attributeOptions: [
+          { id: 'regular', value: 'Regular' },
+          { id: 'large', value: 'Large' },
+          { id: 'extra-large', value: 'Extra Large' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'spaghetti-meatballs-mushrooms',
+    ItemName: 'Spaghetti with Meatballs & Mushrooms',
+    ItemIngredients: 'Spaghetti, tomato sauce, meatballs, mushrooms',
+    Category: 'Pasta',
+    attributes: [
+      {
+        id: 'size',
+        name: 'Size',
+        attributeOptions: [
+          { id: 'regular', value: 'Regular' },
+          { id: 'large', value: 'Large' },
+          { id: 'extra-large', value: 'Extra Large' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'deluxe-spaghetti',
+    ItemName: 'Deluxe Spaghetti',
+    ItemIngredients: 'Spaghetti, tomato sauce, meatballs, mushrooms, green peppers, onions',
+    Category: 'Pasta',
+    attributes: [
+      {
+        id: 'size',
+        name: 'Size',
+        attributeOptions: [
+          { id: 'regular', value: 'Regular' },
+          { id: 'large', value: 'Large' },
+          { id: 'extra-large', value: 'Extra Large' },
+        ],
+      },
+    ],
+  }
+  
 ];

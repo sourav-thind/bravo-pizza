@@ -62,7 +62,7 @@ const Header = ({
           <li>
             <NavLink
               onClick={() => {
-                ResetLocation()
+
                 hideMenu()
               }}
               style={({ isActive }) =>
@@ -74,7 +74,7 @@ const Header = ({
                   : {}
               }
               className="txt-white"
-              to="/menu"
+              to="/#menu"
             >
               Menu
             </NavLink>

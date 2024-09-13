@@ -99,7 +99,7 @@ const Homepage = ({
 
       <Hero showModal={showModal} isModalActive={isModalActive} hideMenu={hideMenu}/>
       <WelcomeSection />
-      <Menu
+      <Menu id='menu'
               allProducts={allProducts}
               allCategories={allCategories}
               changeCategory={changeCategory}
