@@ -151,7 +151,7 @@ export const allProductsData = [
       },
     ],
   },
- 
+ //////////////////////////////////donairs///////////////////////////////
   {
     id: 'super-donair',
     ItemName: 'Super Donair',
@@ -173,16 +173,30 @@ export const allProductsData = [
     ItemName: 'Regular Donair',
     ItemIngredients: 'Donair meat, tomatoes, onions, sweet sauce',
     Category: 'Donair',
-    attributes: [],
+    attributes: [ {
+      id: 'size',
+      name: 'Size',
+      attributeOptions: [
+        { id: 'regular', value: 'regular' },
+        { id: 'large', value: 'Large' },
+      ],
+    },],
   },
   {
     id: 'greek-donair',
     ItemName: 'Greek Donair',
     ItemIngredients: 'Donair with Greek flavors',
     Category: 'Donair',
-    attributes: [],
+    attributes: [ {
+      id: 'size',
+      name: 'Size',
+      attributeOptions: [
+        { id: 'regular', value: 'regular' },
+        { id: 'large', value: 'Large' },
+      ],
+    },],
   },
-
+////////////////////////////salads///////////////////////
   {
     id: 'greek-salad',
     ItemName: 'Greek Salad',
@@ -263,6 +277,7 @@ export const allProductsData = [
     Category: 'Sides',
     attributes: [],
   },
+  ///////////////Pasta///////////////////
   {
     id: 'spaghetti-meat-sauce',
     ItemName: 'Spaghetti with Meat Sauce',
@@ -347,6 +362,130 @@ export const allProductsData = [
         ],
       },
     ],
-  }
+  },
+  {
+    id: 'tortellini',
+    ItemName: 'Tortellini',
+    ItemIngredients: 'Tortellini pasta, cheese filling, marinara sauce, mozzarella cheese',
+    Category: 'Pasta',
+    attributes: [
+      {
+        id: 'size',
+        name: 'Size',
+        attributeOptions: [
+          { id: 'regular', value: 'Regular' },
+          { id: 'large', value: 'Large' },
+          { id: 'extra-large', value: 'Extra Large' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'gnocchi-with-cheese',
+    ItemName: 'Gnocchi with Cheese',
+    ItemIngredients: 'Gnocchi pasta, cheese sauce, mozzarella cheese',
+    Category: 'Pasta',
+    attributes: [
+      {
+        id: 'size',
+        name: 'Size',
+        attributeOptions: [
+          { id: 'regular', value: 'Regular' },
+          { id: 'large', value: 'Large' },
+          { id: 'extra-large', value: 'Extra Large' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'ravioli-with-cheese',
+    ItemName: 'Ravioli with Cheese',
+    ItemIngredients: 'Ravioli pasta, cheese filling, marinara sauce, mozzarella cheese',
+    Category: 'Pasta',
+    attributes: [
+      {
+        id: 'size',
+        name: 'Size',
+        attributeOptions: [
+          { id: 'regular', value: 'Regular' },
+          { id: 'large', value: 'Large' },
+          { id: 'extra-large', value: 'Extra Large' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'chicken-rigatoni-with-cheese',
+    ItemName: 'Chicken Rigatoni with Cheese',
+    ItemIngredients: 'Rigatoni pasta, grilled chicken, cheese sauce, mozzarella cheese',
+    Category: 'Pasta',
+    attributes: [
+      {
+        id: 'size',
+        name: 'Size',
+        attributeOptions: [
+          { id: 'regular', value: 'Regular' },
+          { id: 'large', value: 'Large' },
+          { id: 'extra-large', value: 'Extra Large' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'chicken-gnocchi-with-cheese',
+    ItemName: 'Chicken Gnocchi with Cheese',
+    ItemIngredients: 'Gnocchi pasta, grilled chicken, cheese sauce, mozzarella cheese',
+    Category: 'Pasta',
+    attributes: [
+      {
+        id: 'size',
+        name: 'Size',
+        attributeOptions: [
+          { id: 'regular', value: 'Regular' },
+          { id: 'large', value: 'Large' },
+          { id: 'extra-large', value: 'Extra Large' },
+        ],
+      },
+    ],
+  },
+  
+  //lasagna////////////////////////////////////////////////////////
+  {
+    id: 'meat-lasagna',
+    ItemName: 'Lasagna',
+    ItemIngredients: 'Lasagna sheets, meat sauce, mozzarella cheese, ricotta cheese',
+    Category: 'Lasagna',
+    attributes: [
+      {
+        id: 'size',
+        name: 'Size',
+        attributeOptions: [
+          { id: 'regular', value: 'Regular' },
+          { id: 'large', value: 'Large' },
+          { id: 'extra-large', value: 'Extra Large' },
+          { id: 'family-size', value: 'Family Size' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'vegetarian-lasagna',
+    ItemName: 'Vegetarian Lasagna',
+    ItemIngredients: 'Lasagna sheets, marinara sauce, mozzarella cheese, ricotta cheese, mixed vegetables',
+    Category: 'Lasagna',
+    attributes: [
+      {
+        id: 'size',
+        name: 'Size',
+        attributeOptions: [
+          { id: 'regular', value: 'Regular' },
+          { id: 'large', value: 'Large' },
+          { id: 'extra-large', value: 'Extra Large' },
+          { id: 'family-size', value: 'Family Size' },
+        ],
+      },
+    ],
+  },
+  ///////////////////////Garlic Cheese Fingers////////////////////
   
 ];

@@ -5,11 +5,16 @@ import './footer.css'
 
 const Footer = () => {
   return (
-    <footer className="flex-container flex-column txt-center txt-white pop-font">
+    <Footer>
+      <section>
+        
+      </section>
+    <section className="flex-container flex-column txt-center txt-white pop-font">
       <FooterMenu />
       <hr />
       <FooterContact />
-    </footer>
+    </section>
+    </Footer>
   );
 }
 

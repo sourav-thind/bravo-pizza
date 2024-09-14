@@ -58,25 +58,23 @@ const ContactLanding = () => {
       <div
         className="contact__info"
       >
+        <div className="contacts">
         <h3>Contact Us</h3>
         <p>Have a question, suggestion, or just want to say hello? We'd love to hear from you!</p>
         <section>
           <h4>Customer Support:</h4>
-          <p>Our dedicated customer support team is ready to assist you with any inquiries you may have.</p>
-          <ul>
-            <li>- Phone: 506-386-7000</li>
-          
-          </ul>
+          <p>Our dedicated customer support team is ready to assist you with any inquiries you may have.</p>         
+            <p>- Phone: 506-386-7000</p>
         </section>
         <section>
           <h4>Feedback and Suggestions:</h4>
-          <p>We value your feedback and are always striving to improve. If you have any suggestions, comments, or ideas on how we can enhance our offerings, please let us know.</p>
-          <ul>
-            <li>- Email: Info.bravopizza@gmail.com</li>
-          </ul>
+          <p>We value your feedback and are always striving to improve. If you have any suggestions, comments, or ideas on how we can enhance our offerings, please let us know.</p> 
+            <p>- Email: Info.bravopizza@gmail.com</p>
         </section>
+        </div>
         <section>
           <h4>567 Coverdale Road, Riverview, NB</h4>
+          
         <div>
       <a
         href="https://www.google.com/maps/place/Bravo+Pizza/@46.063317,-64.8120328,17.14z/data=!4m6!3m5!1s0x4ca0b9a5bde5a727:0xb6b52771d836664b!8m2!3d46.0632768!4d-64.810312!16s%2Fg%2F1tj2n1d7?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D"

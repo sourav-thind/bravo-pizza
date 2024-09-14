@@ -14,7 +14,7 @@ export const AllCategories = [
   },
   {
     name: "Garlic Fingers",
-    id: "Garlic Fingers",
+    id: "Garlic-Fingers",
   },
   {
     name: "Salad",

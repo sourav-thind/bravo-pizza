@@ -104,7 +104,7 @@ const Menu = ({ allProducts,
             <article className="menu-item txt-white">
 
               <h3>{singleProduct.ItemName}</h3>
-              <p>{singleProduct.ItemIngredients}</p>
+              <p className="p">{singleProduct.ItemIngredients}</p>
               {singleProduct.attributes.length === 0 ? null :
                 singleProduct.attributes?.map(attribute => (
                   <Attribute
