@@ -18,7 +18,6 @@ const Homepage = ({
     ResetLocation();
   }, []);
 
- const collectData = [];
   const [allProducts, setAllProducts] = useState([]);
   const [allCategories, setAllCategories] = useState([]);
   const [activeCategory, setActiveCategory] = useState('Menu');

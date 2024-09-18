@@ -263,20 +263,7 @@ export const allProductsData = [
   },
  
 
-  {
-    id: 'garlic-cheese-fingers',
-    ItemName: 'Garlic Cheese Fingers',
-    ItemIngredients: 'Garlic bread topped with mozzarella cheese',
-    Category: 'Sides',
-    attributes: [],
-  },
-  {
-    id: 'famous-garlic-fingers',
-    ItemName: 'Famous Garlic Fingers',
-    ItemIngredients: 'Garlic bread with bacon bits and mozzarella cheese',
-    Category: 'Sides',
-    attributes: [],
-  },
+
   ///////////////Pasta///////////////////
   {
     id: 'spaghetti-meat-sauce',
@@ -492,7 +479,7 @@ export const allProductsData = [
       id: 'garlic-cheese-fingers',
       ItemName: 'Garlic Cheese Fingers',
       ItemIngredients: 'Pizza dough, garlic butter, mozzarella cheese',
-      Category: 'Garlic-Fingers',
+      Category: 'Garlic Fingers',
       attributes: [
         {
           id: 'size',
@@ -509,7 +496,7 @@ export const allProductsData = [
       id: 'garlic-cheese-fingers-bacon',
       ItemName: 'Garlic Cheese Fingers with Bacon Bits',
       ItemIngredients: 'Pizza dough, garlic butter, mozzarella cheese, bacon bits',
-      Category: 'Garlic-Fingers',
+      Category: 'Garlic Fingers',
       attributes: [
         {
           id: 'size',
@@ -526,21 +513,21 @@ export const allProductsData = [
       id: 'garlic-bread',
       ItemName: 'Garlic Bread (3 slices)',
       ItemIngredients: 'Bread, garlic butter',
-      Category: 'Garlic-Fingers',
+      Category: 'Garlic Fingers',
       attributes: [],
     },
     {
       id: 'garlic-cheese-bread',
       ItemName: 'Garlic Cheese Bread (3 slices)',
       ItemIngredients: 'Bread, garlic butter, mozzarella cheese',
-      Category: 'Garlic-Fingers',
+      Category: 'Garlic Fingers',
       attributes: [],
     },
     {
       id: 'garlic-cheese-bread-bacon',
       ItemName: 'Garlic Cheese Bread with Bacon (3 slices)',
       ItemIngredients: 'Bread, garlic butter, mozzarella cheese, bacon bits',
-      Category: 'Garlic-Fingers',
+      Category: 'Garlic Fingers',
       attributes: [],
     },
 

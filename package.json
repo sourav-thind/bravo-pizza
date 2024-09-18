@@ -28,6 +28,7 @@
     "react-slick": "^0.30.2",
     "react-social-icons": "^6.18.0",
     "react-spinners": "^0.14.1",
+    "react-star-ratings": "^2.3.0",
     "slick-carousel": "^1.8.1",
     "terser-webpack-plugin": "^5.3.10",
     "uuid": "^10.0.0",

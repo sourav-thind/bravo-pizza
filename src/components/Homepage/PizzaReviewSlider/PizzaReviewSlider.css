@@ -28,7 +28,7 @@
   .review-card {
  
     border-radius: 5px;
-    height:300px;
+    height:400px;
     padding: 20px;
     margin: 0 10px;
     width:90%;
@@ -59,11 +59,11 @@
 
   }
 
-  .ratings{
-    margin-top:10px;
-  }
-  
 
+  
+  svg.widget-svg{
+    margin-top:20px
+  }
   @media only screen and (min-width: 768px) {
    
   

@@ -11,9 +11,9 @@ const Menu = ({ allProducts,
 }) => {
 
   const [itemOffset, setItemOffset] = useState(0);
-  const [endOffset, setEndOffset] = useState(itemOffset + 9);
+  const [endOffset, setEndOffset] = useState(itemOffset + 80);
   const [currentProducts, setcurrentProducts] = useState([...allProductsData]);
-  const [pageCountProducts, setpageCountProducts] = useState(Math.ceil(allProducts.length / 9));
+  const [pageCountProducts, setpageCountProducts] = useState(Math.ceil(allProducts.length / 80));
 
 
   const resetPagination = () => {
@@ -23,9 +23,9 @@ const Menu = ({ allProducts,
 
   useEffect(() => {
 
-    setEndOffset(itemOffset + 9);
+    setEndOffset(itemOffset + 80);
     setcurrentProducts(allProducts.slice(itemOffset, endOffset));
-    setpageCountProducts(Math.ceil(allProductsData.length / 9));
+    setpageCountProducts(Math.ceil(allProductsData.length / 80));
 
   }, [allProducts, setEndOffset, endOffset, itemOffset]);
 
