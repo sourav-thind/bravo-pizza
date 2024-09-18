@@ -11,9 +11,8 @@ const Menu = ({ allProducts,
 }) => {
 
   const [itemOffset, setItemOffset] = useState(0);
-  const [endOffset, setEndOffset] = useState(itemOffset + 80);
+  const [endOffset, setEndOffset] = useState( );
   const [currentProducts, setcurrentProducts] = useState([...allProductsData]);
-  const [pageCountProducts, setpageCountProducts] = useState(Math.ceil(allProducts.length / 80));
 
 
   const resetPagination = () => {
@@ -23,9 +22,8 @@ const Menu = ({ allProducts,
 
   useEffect(() => {
 
-    setEndOffset(itemOffset + 80);
+    setEndOffset(itemOffset + 15);
     setcurrentProducts(allProducts.slice(itemOffset, endOffset));
-    setpageCountProducts(Math.ceil(allProductsData.length / 80));
 
   }, [allProducts, setEndOffset, endOffset, itemOffset]);
 
@@ -76,7 +74,7 @@ const Menu = ({ allProducts,
         <ul>
           {allCategories.map((category) => (
             <li key={category.id}>
-              <a href="#"
+              <a href="/#"
                 onClick={(e) => {
                   e.preventDefault();
                   changeCategory(category.name);

@@ -26,7 +26,7 @@ const WelcomeSection = () => {
         </h2>
       
         <p>
-        At Bravo Pizza, we elevate every slice to a new level of deliciousness! Our secret to success? We know exactly what our customers crave and turn those desires into unforgettable taste experiences. Freshness, originality, and top-tier quality are at the heart of everything we do. With affordable prices, convenient locations and your love, satisfying your pizza cravings has never been easier. Whether you're pre-ordering for yourself or planning a corporate event, Bravo Pizza is here to serve with options that fit every need. At Bravo Pizza, we care about you because it's your love for pizza that makes us special! </p>
+        Bravo Pizza is a cherished community cornerstone in Riverview, renowned for its authentic, mouth-watering pizzas and a warm, welcoming atmosphere. Under new ownership, we've preserved the beloved traditional recipes respecting the legacy of our previous owners. Our commitment extends beyond great food, with a focus on sustainability through local sourcing and eco-friendly practices. Bravo Pizza is more than just a restaurant; it's a place where families gather, memories are made, and community ties are strengthened. Join us for a slice of happiness and experience firsthand why we are a local favorite!</p>
       </motion.section>
       <LazyLoadImage
         className="welcome__cover"

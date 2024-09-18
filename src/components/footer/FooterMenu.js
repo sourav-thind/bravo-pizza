@@ -1,63 +1,12 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import ResetLocation from "../../helpers/ResetLocation";
-
+import { Link } from 'react-scroll';
 const FooterMenu = () => {
   return (
     <ul className="footer__menu  flex-container flex-column">
-      <li>
-        <NavLink
-          style={({ isActive }) =>
-            isActive
-              ? {
-                textDecoration: "none",
-                color: "#ff6240",
-              }
-              : {}
-          }
-          onClick={ResetLocation}
-          className="txt-white"
-          to="/menu"
-        >
-          Menu
-        </NavLink>
-      </li>
-
-  
-      <li>
-        <NavLink
-          style={({ isActive }) =>
-            isActive
-              ? {
-                textDecoration: "none",
-                color: "#ff6240",
-              }
-              : {}
-          }
-          onClick={ResetLocation}
-          className="txt-white"
-          to="/about"
-        >
-          About
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          style={({ isActive }) =>
-            isActive
-              ? {
-                textDecoration: "none",
-                color: "#ff6240",
-              }
-              : {}
-          }
-          onClick={ResetLocation}
-          className="txt-white"
-          to="/contact"
-        >
-          Contact
-        </NavLink>
-      </li>
+       <Link to="menu" spy={true} smooth={true} offset={-150} duration={500} className="txt-white">Menu</Link>
+          <Link to="about" spy={true} smooth={true} offset={-120} duration={500} className="txt-white">About</Link>
+          <Link to="contact" spy={true} smooth={true} offset={-70} duration={500} className="txt-white">Contact</Link>
+        
      
     </ul>
   );

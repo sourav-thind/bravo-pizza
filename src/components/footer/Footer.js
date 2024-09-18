@@ -7,7 +7,6 @@ import './footer.css'
 const Footer = () => {
   return (
     <footer className="flex-container flex-column txt-center txt-white pop-font">
-      
       <FooterMenu />
       <FooterContact />
     </footer>

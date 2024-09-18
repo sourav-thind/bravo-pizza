@@ -40,7 +40,7 @@ const Homepage = ({
     getAllProducts();
     getProductsByCategory(activeCategory);
   
-  },[] );
+  },[activeCategory] );
 
   const getProductsByCategory = (category) => {
     let separateCategoriesByname = []
