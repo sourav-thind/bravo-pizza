@@ -10,6 +10,13 @@ header {
 .scrolled {
     background-color: #eef0d9;
   }
+  a {
+    cursor: pointer;
+  }
+
+.txt-white{
+    color: var(--main-text-orange)
+}
 .header__nav {
     display: flex;
     flex-direction: row;

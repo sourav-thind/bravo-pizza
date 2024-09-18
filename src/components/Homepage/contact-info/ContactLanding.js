@@ -24,7 +24,7 @@ const ContactLanding = () => {
 
     
   return (
-    <motion.article className="homepage__contact flex-container flex-column" 
+    <motion.article className="homepage__contact flex-container flex-column contact" 
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       exit={{ opacity: 0 }}

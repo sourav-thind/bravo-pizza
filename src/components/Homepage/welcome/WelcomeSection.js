@@ -15,7 +15,7 @@ const imageParentVariant = {
 
 const WelcomeSection = () => {
   return (
-    <article className="homepage__welcome">
+    <article className="homepage__welcome about">
       <motion.section className="welcome__info flex-container flex-column txt-center pop-font"
         variants={imageParentVariant}
         initial={"initial"}

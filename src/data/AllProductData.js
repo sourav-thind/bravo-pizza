@@ -488,4 +488,61 @@ export const allProductsData = [
   },
   ///////////////////////Garlic Cheese Fingers////////////////////
   
+    {
+      id: 'garlic-cheese-fingers',
+      ItemName: 'Garlic Cheese Fingers',
+      ItemIngredients: 'Pizza dough, garlic butter, mozzarella cheese',
+      Category: 'Garlic-Fingers',
+      attributes: [
+        {
+          id: 'size',
+          name: 'Size',
+          attributeOptions: [
+            { id: 'small', value: 'Small', slices: '6' },
+            { id: 'medium', value: 'Medium', slices: '8' },
+            { id: 'large', value: 'Large', slices: '10' },
+          ],
+        },
+      ],
+    },
+    {
+      id: 'garlic-cheese-fingers-bacon',
+      ItemName: 'Garlic Cheese Fingers with Bacon Bits',
+      ItemIngredients: 'Pizza dough, garlic butter, mozzarella cheese, bacon bits',
+      Category: 'Garlic-Fingers',
+      attributes: [
+        {
+          id: 'size',
+          name: 'Size',
+          attributeOptions: [
+            { id: 'small', value: 'Small', slices: '6' },
+            { id: 'medium', value: 'Medium', slices: '8' },
+            { id: 'large', value: 'Large', slices: '10' },
+          ],
+        },
+      ],
+    },
+    {
+      id: 'garlic-bread',
+      ItemName: 'Garlic Bread (3 slices)',
+      ItemIngredients: 'Bread, garlic butter',
+      Category: 'Garlic-Fingers',
+      attributes: [],
+    },
+    {
+      id: 'garlic-cheese-bread',
+      ItemName: 'Garlic Cheese Bread (3 slices)',
+      ItemIngredients: 'Bread, garlic butter, mozzarella cheese',
+      Category: 'Garlic-Fingers',
+      attributes: [],
+    },
+    {
+      id: 'garlic-cheese-bread-bacon',
+      ItemName: 'Garlic Cheese Bread with Bacon (3 slices)',
+      ItemIngredients: 'Bread, garlic butter, mozzarella cheese, bacon bits',
+      Category: 'Garlic-Fingers',
+      attributes: [],
+    },
+
+  
 ];

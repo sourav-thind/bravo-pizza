@@ -58,9 +58,7 @@ const FooterMenu = () => {
           Contact
         </NavLink>
       </li>
-      <li>
-        {/* <FooterSocials /> */}
-      </li>
+     
     </ul>
   );
 }

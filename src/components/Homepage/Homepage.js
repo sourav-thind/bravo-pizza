@@ -95,20 +95,16 @@ const Homepage = ({
 
 
   return (
-    <React.Fragment>
+    <>
 
-      <Hero showModal={showModal} isModalActive={isModalActive} hideMenu={hideMenu}/>
-      <WelcomeSection />
-      <Menu id='menu'
-              allProducts={allProducts}
-              allCategories={allCategories}
-              changeCategory={changeCategory}
-              />
-      <ContactLanding />
+      <Hero id='home' showModal={showModal} isModalActive={isModalActive} hideMenu={hideMenu}/>
+      <WelcomeSection id='about' />
+      <Menu id='menu'allProducts={allProducts} allCategories={allCategories} changeCategory={changeCategory} />
+      <ContactLanding id='contact' />
       <PizzaReviewSlider/>
       <ScrollButton /> 
       
-    </React.Fragment>
+    </>
   );
 }
 

@@ -1,6 +1,5 @@
 import React from "react";
 import ScrollButton from "../../helpers/ScrollBtn";
-import ReactPaginate from 'react-paginate';
 import { useState, useEffect } from "react"; 
 import { motion } from "framer-motion";
 import './Menu.css'
@@ -9,9 +8,6 @@ import Attribute from './Attribute';
 const Menu = ({ allProducts,
   allCategories,
   changeCategory,
-  handleAddProduct,
-  handleRemoveProduct,
-  findMenuItem
 }) => {
 
   const [itemOffset, setItemOffset] = useState(0);
@@ -20,11 +16,6 @@ const Menu = ({ allProducts,
   const [pageCountProducts, setpageCountProducts] = useState(Math.ceil(allProducts.length / 9));
 
 
-  const handlePageClick = (event) => {
-    const newOffset = (event.selected * 9) % allProducts.length;
-
-
-  };
   const resetPagination = () => {
     setItemOffset(0);
     setEndOffset(9);
