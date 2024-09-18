@@ -12,7 +12,7 @@
     width: 90%; 
     max-width: 100%; 
     margin: 0 auto; 
-    padding: 5% 0;
+    padding: 0;
     color: black;
    
 
@@ -29,9 +29,9 @@
  
     border-radius: 5px;
     height:400px;
-    padding: 20px;
-    margin: 0 10px;
-    width:90%;
+
+    margin: 0 10px; 
+    width:100%;
   }
   
   .card-content {
@@ -69,17 +69,16 @@
   
     .review-card {
       width: 300px;
+      margin:auto
     }
   }
   
   @media only screen and (max-width: 768px) {
-    .review-card {
-      width: 100%;
-    }
+ 
+  .slider-container{
+    width:100%
   }
-  
-
-
+  .review-card{height: 450px}
   
 .slick-prev {
     left:-5%;
@@ -88,4 +87,5 @@
   .slick-next {
     right:-5%;
     z-index: 1; 
+  }
   }
