@@ -7,11 +7,18 @@
 .welcome__cover {
     width: 100%;
     object-fit: cover;
-    max-height: 20rem;
-    height: 50%;
     z-index: 2;
     opacity: 0.8;
+  
  
+}
+.imgCover{
+    width: 96%;
+   
+    max-height: 30rem;
+    margin: 2%;
+
+  
 }
 .welcome__info {
     position: relative;
@@ -73,7 +80,8 @@ h5{
         padding : 2px;
         font-size: 2rem;
         font-weight: 300;
-        margin:0
+        margin:0;
+        display: grid;
     }
     .bravoPizza{
         font-size: 4rem;

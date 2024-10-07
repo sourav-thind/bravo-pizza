@@ -155,46 +155,26 @@ export const allProductsData = [
   {
     id: 'super-donair',
     ItemName: 'Super Donair',
-    ItemIngredients: 'Donair meat, tomatoes, onions, sweet sauce',
-    Category: 'Donair',
+    ItemIngredients: 'Greek Peta Bread, Donair Sauce, Onion, Donair meat, Tomato, Mozzarella Cheese',
+    Category: 'Donair Special',
     attributes: [
       {
-        id: 'size',
-        name: 'Size',
-        attributeOptions: [
-          { id: 'regular', value: 'regular' },
-          { id: 'large', value: 'Large' },
-        ],
       },
     ],
   },
   {
     id: 'regular-donair',
     ItemName: 'Regular Donair',
-    ItemIngredients: 'Donair meat, tomatoes, onions, sweet sauce',
-    Category: 'Donair',
-    attributes: [ {
-      id: 'size',
-      name: 'Size',
-      attributeOptions: [
-        { id: 'regular', value: 'regular' },
-        { id: 'large', value: 'Large' },
-      ],
-    },],
+    ItemIngredients: 'Greek Peta Bread, Donair Sauce, Onion, Donair meat, Tomato',
+    Category: 'Donair Special',
+    attributes: [],
   },
   {
     id: 'greek-donair',
     ItemName: 'Greek Donair',
-    ItemIngredients: 'Donair with Greek flavors',
-    Category: 'Donair',
-    attributes: [ {
-      id: 'size',
-      name: 'Size',
-      attributeOptions: [
-        { id: 'regular', value: 'regular' },
-        { id: 'large', value: 'Large' },
-      ],
-    },],
+    ItemIngredients: 'Greek Peta Bread, Donair Sauce, Onion, Donair meat, Tomato, Tezaki Sauce, Feta Cheese.',
+    Category: 'Donair Special',
+    attributes: [],
   },
 ////////////////////////////salads///////////////////////
   {
@@ -231,8 +211,8 @@ export const allProductsData = [
   },
   {
     id: 'chicken-ceaser',
-    ItemName: 'Chicked Ceaser',
-    ItemIngredients: 'Chicked, lettuce, cheese, Caesar dressing',
+    ItemName: 'Chicken Ceaser Salad',
+    ItemIngredients: 'Chicken, lettuce, cheese, Caesar dressing',
     Category: 'Salad',
     attributes: [
       {
@@ -247,8 +227,8 @@ export const allProductsData = [
     ],
   },
   {
-    id: 'greek-chicked',
-    ItemName: 'Greek Chicked',
+    id: 'greek-chicken',
+    ItemName: 'Greek Chicken Salad',
     ItemIngredients: 'Chicken,  lettuce, croutons, Parmesan cheese, Tomatoes, cucumbers, olives, feta cheese ',
     Category: 'Salad',
     attributes: [ {

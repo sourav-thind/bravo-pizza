@@ -21,7 +21,7 @@ export const AllCategories = [
     id: "Salad",
   },
   {
-    name: "Donair",
-    id: "Donair",
+    name: "Donair Special",
+    id: "Donair Special",
   },
 ];

@@ -4,6 +4,8 @@ import './welcome.css'
 import img375 from '../../../assets/images/section-one/section-one-375.webp'
 import img700 from '../../../assets/images/section-one/section-one-700.webp'
 import img1440 from '../../../assets/images/section-one/section-one-1440.webp'
+import imgMain from '../../../assets/bravomain.png'
+import imgDinein from '../../../assets/bravo-dinein.png'
 import { motion } from "framer-motion";
 
 const imageParentVariant = {
@@ -28,13 +30,22 @@ const WelcomeSection = () => {
         <p>
         Bravo Pizza is a cherished community cornerstone in Riverview, renowned for its authentic, mouth-watering pizzas and a warm, welcoming atmosphere. Under new ownership, we've preserved the beloved traditional recipes respecting the legacy of our previous owners. Our commitment extends beyond great food, with a focus on sustainability through local sourcing and eco-friendly practices. Bravo Pizza is more than just a restaurant; it's a place where families gather, memories are made, and community ties are strengthened. Join us for a slice of happiness and experience firsthand why we are a local favorite!</p>
       </motion.section>
+      <div  className="welcome__cover">
+   
       <LazyLoadImage
-        className="welcome__cover"
-        src={img375}
-        srcSet={`${img1440} 1440w, ${img700} 700w, ${img375} 375w`} 
+      className='imgCover'
+        src={imgMain}
         sizes="(min-width: 1440px) 1440px, (min-width: 700px) 700px, 375px"
-        alt="Bravo Pizza restaurant interior with people at the tabel and the staff serving the customers"
+        alt="Bravo Pizza restaurant interior"
       />
+      <LazyLoadImage
+       className='imgCover'
+        src={imgDinein}
+        sizes="(min-width: 1440px) 1440px, (min-width: 700px) 700px, 375px"
+        alt="Bravo Pizza restaurant interior"
+      />
+           
+           </div>
     </article>
   )
 }

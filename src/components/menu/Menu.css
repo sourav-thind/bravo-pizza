@@ -253,6 +253,7 @@ input[type="search"]::-webkit-search-results-decoration {
   .menu {
     grid-template-columns: repeat(4, 1fr);
     gap: none;
+   
   }
 
   .menu__categories {
@@ -265,6 +266,7 @@ input[type="search"]::-webkit-search-results-decoration {
     overflow-x: initial;
     scroll-behavior: initial;
     align-items: initial;
+    padding-right: 2rem;
   }
   .menu__categories__search {
     width: 100%;
@@ -276,6 +278,9 @@ input[type="search"]::-webkit-search-results-decoration {
     line-height: 5rem;
     overflow-x: initial;
     scroll-behavior: initial;
+    min-width:12rem;
+    
+
   }
 
   .menu__categories ul li a {
@@ -314,7 +319,7 @@ input[type="search"]::-webkit-search-results-decoration {
     width: 80%;
   }
   .menu__categories ul {
-    padding: 0;
+    padding: 2rem;
   }
   .menu {
     position: relative;

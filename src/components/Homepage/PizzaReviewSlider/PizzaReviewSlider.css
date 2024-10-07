@@ -69,7 +69,8 @@
   
     .review-card {
       width: 300px;
-      margin:auto
+      margin:auto;
+      overflow: scroll;
     }
   }
   
@@ -78,7 +79,9 @@
   .slider-container{
     width:100%
   }
-  .review-card{height: 450px}
+  .review-card{
+  min-height: fit-content;
+  overflow: scroll;}
   
 .slick-prev {
     left:-5%;
