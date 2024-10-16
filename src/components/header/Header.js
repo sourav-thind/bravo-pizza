@@ -44,11 +44,11 @@ const Header = ({
         <ul className={`header__nav__menu flex-row pop-font ${isModalActive ? 'active' : ''}`}>
 
           <NavLink onClick={() => { ResetLocation(); hideMenu()}} style={({ isActive }) => isActive ? { textDecoration: 'none',  color: '#ff6240', }
-              : {}} className="txt-white" to="/">Home</NavLink>
+              : {}} className="txt-color" to="/">Home</NavLink>
 
-          <Link to="menu" spy={true} smooth={true} offset={-150} duration={500} onClick={hideMenu} className="txt-white">Menu</Link>
-          <Link to="about" spy={true} smooth={true} offset={-120} duration={500} onClick={hideMenu} className="txt-white">About</Link>
-          <Link to="contact" spy={true} smooth={true} offset={-70} duration={500} onClick={hideMenu} className="txt-white">Contact</Link>
+          <Link to="menu" spy={true} smooth={true} offset={-150} duration={500} onClick={hideMenu} className="txt-color">Menu</Link>
+          <Link to="about" spy={true} smooth={true} offset={-120} duration={500} onClick={hideMenu} className="txt-color">About</Link>
+          <Link to="contact" spy={true} smooth={true} offset={-70} duration={500} onClick={hideMenu} className="txt-color">Contact</Link>
         </ul>
         <img width="80" height="80" className="header__nav__hamburger" src={isModalActive ? closeMenu : openMenu} alt={isModalActive ? "Close menu" : "Open menu"}
           onClick={showModal}

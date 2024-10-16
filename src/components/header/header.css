@@ -1,5 +1,7 @@
+/* Header */
+
 header {
-    height: 4rem;
+    height: 4.5rem;
     background-color: transparent;
     position: sticky;
     top:0;
@@ -12,37 +14,37 @@ header {
   }
   a {
     cursor: pointer;
+  
+  }
+  .text-color{
+    color:black
   }
 
-.txt-white{
-    color: var(--main-text-orange)
-}
+
 .header__nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+/* Logo */
 .logo-styling {
     align-items: center;
-    width: 5rem;
+    width: 6rem;
     margin:0px;
     padding: 0;
-    color: var(--main-text-red)
 }
 .logo {
-    width: 85%;
+    width: 50%;
     height: auto;
     transition: all ease-in-out 0.2s;
     margin: 0px;
-    
 }
 .h1 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: var(--josefin-font);
     line-height: 1.2rem;
     letter-spacing: 2px;
-    color: var(--main-text-orange)
 }
 .logo-styling h1 span {
     display: block;
@@ -58,12 +60,13 @@ header {
     align-items: center;
 }
 .header__nav__menu.active {
-    position: sticky;
+    position: absolute;
     display: flex;
     flex-direction: column;
     top: 100%;
     left: 0;
     z-index: 99;
+    background-color: #eef0d9;
     padding-top: 2rem;
     padding-bottom: 2rem;
     width: 100%;
@@ -71,7 +74,26 @@ header {
 }
 .header__nav__menu a {
     transition: all ease-in-out 0.2s;
-    color: black
+}
+/* Login & Cart */
+.login-and-cart {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+h1{
+    color: var(--pizza-red)
+}
+.cart-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-weight: 600;
+}
+.cart-btn img {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .header__nav__hamburger {
@@ -84,6 +106,51 @@ header {
 }
 .header__nav__menu.active .header__nav__hamburger {
     content: url("../../assets/images/close-btn.svg");
+}
+.hero__info {
+    padding: 1rem;
+}
+.hero__info {
+    position: absolute;
+    z-index: 4;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center;
+    overflow-x: hidden;
+}
+.hero__info span {
+    color: var(--pizza-red);
+    font-family: var(--nothing-font);
+    font-size: 2rem;
+}
+
+.hero__info h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: var(--pizza-red);
+}
+
+.hero__info p {
+    font-size: 1rem;
+}
+
+.hero__interaction {
+    gap: 1.3rem;
+    box-sizing: content-box;
+}
+
+.hero__interaction a:first-child {
+    color: var(--light-black);
+    background-color: var(--yellow);
+    border: 1px solid transparent;
+}
+
+.hero__interaction a:last-child {
+    border-width: 1px;
+    border-color: var(--transparent-button);
+    background-color: var(--transparent-button);
+    color: var(--light-black);
 }
 .hero__interaction a:last-child,
 .hero__interaction a:first-child,
@@ -109,7 +176,7 @@ header {
         transition: all ease-in-out 0.3s;
     }
     .header__nav__menu a:hover {
-        color: var(--main-text-red)
+        color: var(--pizza-red);
     }
     .logo:hover {
         transform: rotate(30deg);
@@ -127,8 +194,21 @@ header {
         border-color: rgba(255, 255, 255, 0.637);
         background-color: rgba(255, 255, 255, 0.637);
     }
-   
-    
+    .login-and-cart a:hover {
+        background-color: var(--pizza-red);
+        border-color: var(--pizza-red);
+        color: var(--white);
+        opacity: 0.5;
+        -moz-transition: all ease-in-out 0.3s;
+        -o-transition: all ease-in-out 0.3s;
+        -webkit-transition: all ease-in-out 0.3s;
+        -ms-transition: all ease-in-out 0.3s;
+        transition: all ease-in-out 0.3s;
+    }
+    .cart-btn:hover {
+        opacity: 0.8;
+        color: var(--light-black) !important;
+    }
 }
 
 @media screen and (min-width: 1025px) {

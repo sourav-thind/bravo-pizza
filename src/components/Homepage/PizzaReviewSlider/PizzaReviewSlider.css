@@ -1,12 +1,6 @@
 
   
- 
- body {
-    margin: 0;
-    padding: 0;
-    width:100%;
-    font-family: 'Arial', sans-serif;
-  }
+
 
 .slider-container {
     width: 90%; 
@@ -14,8 +8,9 @@
     margin: 0 auto; 
     padding: 0;
     color: black;
-   
-
+   overflow: hidden;
+  
+   overflow-y: hidden;
   }
   
   .slider-title {
@@ -26,10 +21,8 @@
   }
   
   .review-card {
- 
-    border-radius: 5px;
-    height:400px;
-
+    height:450px;
+    overflow-y: hidden;
     margin: 0 10px; 
     width:100%;
   }
@@ -42,8 +35,9 @@
     padding: 20px;
     margin: 0 10px;
     background-color: var(--main-bg-light);
-    height:90% ;
+    height:80% ;
     width:75%;
+    overflow-y: hidden;
   }
   
   .review-card h3 {
