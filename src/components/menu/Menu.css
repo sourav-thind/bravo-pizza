@@ -275,6 +275,7 @@ input[type="search"]::-webkit-search-results-decoration {
     height:60px;
     margin:0.2rem 1rem;
     overflow: hidden;;
+    width: 100vw;
   } .menu {
     display: grid;
     grid-template-columns: 1fr; /* Single column layout */
