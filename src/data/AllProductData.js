@@ -2,7 +2,7 @@ export const allProductsData = [
   {
     id: 'cheese-pizza',
     ItemName: 'Cheese Pizza',
-    ItemIngredients: 'Pizza dough, pizza sauce, mozzarella cheese',
+    ItemIngredients: '',
     Category: 'Pizza',
     attributes: [
       {
@@ -21,7 +21,7 @@ export const allProductsData = [
   {
     id: 'one-topping-pizza',
     ItemName: 'One Topping Pizza',
-    ItemIngredients: 'Pizza dough, pizza sauce, mozzarella cheese, one topping of your choice',
+    ItemIngredients: '',
     Category: 'Pizza',
     attributes: [
       {
@@ -40,7 +40,7 @@ export const allProductsData = [
   {
     id: 'two-topping-pizza',
     ItemName: 'Two Topping Pizza',
-    ItemIngredients: 'Pizza dough, pizza sauce, mozzarella cheese, two toppings of your choice',
+    ItemIngredients: '',
     Category: 'Pizza',
     attributes: [
       {
@@ -59,7 +59,7 @@ export const allProductsData = [
   {
     id: 'three-topping-pizza',
     ItemName: 'Three Topping Pizza',
-    ItemIngredients: 'Pizza dough, pizza sauce, mozzarella cheese, three toppings of your choice',
+    ItemIngredients: '',
     Category: 'Pizza',
     attributes: [
       {
@@ -78,7 +78,7 @@ export const allProductsData = [
   {
     id: 'bbq-chicken-pizza',
     ItemName: 'BBQ Chicken Pizza',
-    ItemIngredients: 'Pizza dough, BBQ sauce, mozzarella cheese, grilled chicken, red onions, cilantro',
+    ItemIngredients: ' BBQ sauce, mozzarella cheese, grilled chicken, red onions, cilantro',
     Category: 'Pizza',
     attributes: [
       {
@@ -97,7 +97,7 @@ export const allProductsData = [
   {
     id: 'works-pizza',
     ItemName: 'Works Pizza',
-    ItemIngredients: 'Pizza dough, pizza sauce, mozzarella cheese, pepperoni, hamburger, mushroom, green peppers, bacon',
+    ItemIngredients: 'Peporoni, Mushrooms, Hamburger,  Green Pepper, Bacon, Cheese', 
     Category: 'Pizza',
     attributes: [
       {
@@ -116,7 +116,7 @@ export const allProductsData = [
   {
     id: 'greek-pizza',
     ItemName: 'Greek Pizza',
-    ItemIngredients: 'Pizza dough, pizza sauce, mozzarella cheese, feta, mushroom, black olives, onions, tomato',
+    ItemIngredients: ' mozzarella cheese, feta, mushroom, black olives, onions, tomato',
     Category: 'Pizza',
     attributes: [
       {
@@ -135,7 +135,7 @@ export const allProductsData = [
   {
     id: 'donair-pizza',
     ItemName: 'Donair Pizza',
-    ItemIngredients: 'Pizza dough, donair sauce, donair meat, tomato, onion',
+    ItemIngredients: 'Donair sauce, donair meat, tomato, onion',
     Category: 'Pizza',
     attributes: [
       {
@@ -248,7 +248,7 @@ export const allProductsData = [
   {
     id: 'spaghetti-meat-sauce',
     ItemName: 'Spaghetti with Meat Sauce',
-    ItemIngredients: 'Spaghetti, tomato sauce, seasoned ground beef',
+
     Category: 'Pasta',
     attributes: [
       {
@@ -265,7 +265,7 @@ export const allProductsData = [
   {
     id: 'spaghetti-mushroom',
     ItemName: 'Spaghetti with Mushroom',
-    ItemIngredients: 'Spaghetti, tomato sauce, mushrooms',
+  
     Category: 'Pasta',
     attributes: [
       {
@@ -282,7 +282,7 @@ export const allProductsData = [
   {
     id: 'spaghetti-meatballs',
     ItemName: 'Spaghetti with Meatballs',
-    ItemIngredients: 'Spaghetti, tomato sauce, meatballs',
+   
     Category: 'Pasta',
     attributes: [
       {
@@ -299,7 +299,7 @@ export const allProductsData = [
   {
     id: 'spaghetti-meatballs-mushrooms',
     ItemName: 'Spaghetti with Meatballs & Mushrooms',
-    ItemIngredients: 'Spaghetti, tomato sauce, meatballs, mushrooms',
+   
     Category: 'Pasta',
     attributes: [
       {
@@ -316,7 +316,7 @@ export const allProductsData = [
   {
     id: 'deluxe-spaghetti',
     ItemName: 'Deluxe Spaghetti',
-    ItemIngredients: 'Spaghetti, tomato sauce, meatballs, mushrooms, green peppers, onions',
+    
     Category: 'Pasta',
     attributes: [
       {
@@ -333,7 +333,7 @@ export const allProductsData = [
   {
     id: 'tortellini',
     ItemName: 'Tortellini',
-    ItemIngredients: 'Tortellini pasta, cheese filling, marinara sauce, mozzarella cheese',
+    
     Category: 'Pasta',
     attributes: [
       {
@@ -350,7 +350,7 @@ export const allProductsData = [
   {
     id: 'gnocchi-with-cheese',
     ItemName: 'Gnocchi with Cheese',
-    ItemIngredients: 'Gnocchi pasta, cheese sauce, mozzarella cheese',
+   
     Category: 'Pasta',
     attributes: [
       {
@@ -367,7 +367,7 @@ export const allProductsData = [
   {
     id: 'ravioli-with-cheese',
     ItemName: 'Ravioli with Cheese',
-    ItemIngredients: 'Ravioli pasta, cheese filling, marinara sauce, mozzarella cheese',
+
     Category: 'Pasta',
     attributes: [
       {
@@ -384,7 +384,7 @@ export const allProductsData = [
   {
     id: 'chicken-rigatoni-with-cheese',
     ItemName: 'Chicken Rigatoni with Cheese',
-    ItemIngredients: 'Rigatoni pasta, grilled chicken, cheese sauce, mozzarella cheese',
+
     Category: 'Pasta',
     attributes: [
       {
@@ -401,7 +401,7 @@ export const allProductsData = [
   {
     id: 'chicken-gnocchi-with-cheese',
     ItemName: 'Chicken Gnocchi with Cheese',
-    ItemIngredients: 'Gnocchi pasta, grilled chicken, cheese sauce, mozzarella cheese',
+
     Category: 'Pasta',
     attributes: [
       {
@@ -420,7 +420,7 @@ export const allProductsData = [
   {
     id: 'meat-lasagna',
     ItemName: 'Lasagna',
-    ItemIngredients: 'Lasagna sheets, meat sauce, mozzarella cheese, ricotta cheese',
+
     Category: 'Lasagna',
     attributes: [
       {
@@ -438,7 +438,7 @@ export const allProductsData = [
   {
     id: 'vegetarian-lasagna',
     ItemName: 'Vegetarian Lasagna',
-    ItemIngredients: 'Lasagna sheets, marinara sauce, mozzarella cheese, ricotta cheese, mixed vegetables',
+    
     Category: 'Lasagna',
     attributes: [
       {
@@ -458,7 +458,7 @@ export const allProductsData = [
     {
       id: 'garlic-cheese-fingers',
       ItemName: 'Garlic Cheese Fingers',
-      ItemIngredients: 'Pizza dough, garlic butter, mozzarella cheese',
+      ItemIngredients: 'Garlic butter, mozzarella cheese',
       Category: 'Garlic Fingers',
       attributes: [
         {
@@ -476,7 +476,7 @@ export const allProductsData = [
     {
       id: 'garlic-cheese-fingers-bacon',
       ItemName: 'Garlic Cheese Fingers with Bacon Bits',
-      ItemIngredients: 'Pizza dough, garlic butter, mozzarella cheese, bacon bits',
+      ItemIngredients: 'Garlic butter, mozzarella cheese, bacon bits',
       Category: 'Garlic Fingers',
       attributes: [
         {
@@ -494,21 +494,21 @@ export const allProductsData = [
     {
       id: 'garlic-bread',
       ItemName: 'Garlic Bread (3 slices)',
-      ItemIngredients: 'Bread, garlic butter',
+
       Category: 'Garlic Fingers',
       attributes: [],
     },
     {
       id: 'garlic-cheese-bread',
       ItemName: 'Garlic Cheese Bread (3 slices)',
-      ItemIngredients: 'Bread, garlic butter, mozzarella cheese',
+      
       Category: 'Garlic Fingers',
       attributes: [],
     },
     {
       id: 'garlic-cheese-bread-bacon',
       ItemName: 'Garlic Cheese Bread with Bacon (3 slices)',
-      ItemIngredients: 'Bread, garlic butter, mozzarella cheese, bacon bits',
+      
       Category: 'Garlic Fingers',
       attributes: [],
     },
