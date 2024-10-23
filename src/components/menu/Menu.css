@@ -276,7 +276,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .toppings-section {
     grid-column: 1 / 2; 
-    grid-row: 3 / 4;    
+    grid-row: 3 / 3;   
+
   }
   .menu__categories{
 
@@ -289,27 +290,26 @@ input[type="search"]::-webkit-search-results-decoration {
     max-width: 90vw;
   }
 
-  ul li{
-    padding:0px;
-    margin:0px;
-    height:0px
+  .toppings-section{
+    min-width: 90vw;
+    min-height: fit-content;
+  }
+  .toppings-box {
+    flex: 1;
+    width: 100%;
+    padding: 15px;
+    overflow: visible;
+   
+  }
+  .item-heading {
+    font-size: 7rem;
+    font-weight: 800;
+    letter-spacing: 1px;
   }
 
-  a{
-    white-space: nowrap; 
-  }
+  
 }
-.toppings-box {
-  flex: 1;
-  width: 50%;
-  padding: 15px;
- 
-}
-.item-heading {
-  font-size: 7rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
+
 
 @media screen and (min-width: 700px) {
   .menu {
