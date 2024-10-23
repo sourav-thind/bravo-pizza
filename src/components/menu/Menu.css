@@ -247,9 +247,9 @@ input[type="search"]::-webkit-search-results-decoration {
 @media screen and (max-width: 600px) {
   .menu-item{
     min-height:fit-content;
-    margin:0.2rem 1rem;
+    margin:0.2rem;
     overflow: hidden;;
-    width: 100vw;
+    width: 90vw;
     max-height: fit-content;
   } 
   
@@ -258,6 +258,8 @@ input[type="search"]::-webkit-search-results-decoration {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto; 
     gap: 1rem;
+    max-width: 96vw;
+    left:0;
   }
   .menu__categories {
     grid-column: 1 / 2; 
