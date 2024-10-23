@@ -123,20 +123,28 @@ h5{
     .imageHolder {
         display: flex;
         height:fit-content;
-        padding:2%;
+        padding:0;
         max-width: 100vw;
       }
       
-      .col2 {   
-        display: hidden;
-      }
       .imageHolder {
         display: block;
       }
-      
-      .Col1, .col2 {
+       .Col2 {
         display: block;
         width: 100%;
+        margin: 2%;
+      }
+      .Col1{
+        display: block;
+        width: 140%;
+        overflow: hidden;
+        left:-2vw;
+       
+      }
+      .imgCover{
+        height:30vh;
+      
       }
       
       .imgCover, .imgStaff {

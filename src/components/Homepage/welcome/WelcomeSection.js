@@ -33,23 +33,20 @@ const WelcomeSection = () => {
           <div className='Col1'>
           <LazyLoadImage
             className='imgCover'
-            id="img1"
             src={imgMain}
             sizes="(min-width: 1440px) 1440px, (min-width: 700px) 700px, 375px"
             alt="Bravo Pizza restaurant interior"
           />
           <LazyLoadImage
             className='imgCover'
-            id="img2"
             src={imgDinein}
             sizes="(min-width: 1440px) 1440px, (min-width: 700px) 700px, 375px"
             alt="Bravo Pizza restaurant interior"
           />
           </div>
-          <div className='col2'>
+          <div className='Col2'>
           <LazyLoadImage
             className='imgStaff'
-            id="img3"
             src={imgStaff}
             sizes="(min-width: 1440px) 1440px, (min-width: 700px) 700px, 375px"
             alt="Bravo Pizza restaurant interior"
