@@ -79,7 +79,7 @@ const PizzaReviewSlider = () => {
   return (
     <div className="slider-container">
       <h2 className="slider-title">Customer Reviews</h2>
-      <Slider {...settings}>
+      <Slider className="Slider" {...settings}>
         {reviews.map((review, index) => (
           <div key={index} className="review-card">
             <div className="card-content">

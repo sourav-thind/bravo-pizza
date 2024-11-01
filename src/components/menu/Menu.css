@@ -54,10 +54,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .heading{
   color:var(--main-text-orange);
-  margin:1%;
+  margin:3%;
     display: flex;
     justify-content: center;
-
+  font-size: x-large;
 }
 /* ScrollBar */
 

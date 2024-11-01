@@ -78,7 +78,7 @@ export const allProductsData = [
   {
     id: 'bbq-chicken-pizza',
     ItemName: 'BBQ Chicken Pizza',
-    ItemIngredients: 'BBQ Sauce, Mushroom, Red peppers, Red Onion, Chicke',
+    ItemIngredients: 'BBQ Sauce, Mushroom, Chicken, Red peppers, Red Onion',
     Category: 'Pizza',
     attributes: [
       {
@@ -97,7 +97,7 @@ export const allProductsData = [
   {
     id: 'works-pizza',
     ItemName: 'Works Pizza',
-    ItemIngredients: 'Peporoni, Mushrooms, Hamburger,  Green Pepper, Bacon, Cheese', 
+    ItemIngredients: 'Peporoni, Hamburger,Mushrooms, Green Pepper, Cheese, Bacon', 
     Category: 'Pizza',
     attributes: [
       {
@@ -116,7 +116,7 @@ export const allProductsData = [
   {
     id: 'greek-pizza',
     ItemName: 'Greek Pizza',
-    ItemIngredients: 'feta cheese, mushroom, black olives, onions, tomato',
+    ItemIngredients: 'Mushroon, Onions, Feta cheese, Black olives, Tomato',
     Category: 'Pizza',
     attributes: [
       {
@@ -135,7 +135,7 @@ export const allProductsData = [
   {
     id: 'donair-pizza',
     ItemName: 'Donair Pizza',
-    ItemIngredients: 'Donair sauce, donair meat, tomato, onion',
+    ItemIngredients: 'Donair sauce, Donair meat, Onion, Tomato',
     Category: 'Pizza',
     attributes: [
       {
@@ -155,7 +155,7 @@ export const allProductsData = [
   {
     id: 'super-donair',
     ItemName: 'Super Donair',
-    ItemIngredients: 'Greek Peta Bread, Donair Sauce, Onion, Donair meat, Tomato, Mozzarella Cheese',
+    ItemIngredients: 'Greek Peta Bread, Donair Sauce, Onion, Donair meat, Mozzarella Cheese, Tomato',
     Category: 'Donair Special',
     attributes: [
       {
@@ -172,7 +172,7 @@ export const allProductsData = [
   {
     id: 'greek-donair',
     ItemName: 'Greek Donair',
-    ItemIngredients: 'Greek Peta Bread, Donair Sauce, Onion, Donair meat, Tomato, Tezaki Sauce, Feta Cheese.',
+    ItemIngredients: 'Greek Peta Bread, Donair Sauce, Onion, Donair meat, Tezaki Sauce, Feta Cheese, Tomato.',
     Category: 'Donair Special',
     attributes: [],
   },
@@ -180,7 +180,7 @@ export const allProductsData = [
   {
     id: 'greek-salad',
     ItemName: 'Greek Salad',
-    ItemIngredients: 'Iceberg lettuce, tomato, cucumber, Kalamata olives, feta cheese and Greek dressing',
+    ItemIngredients: 'Iceberg lettuce, Tomato, Cucumber, Kalamata olives, Feta cheese and Greek dressing',
     Category: 'Salad',
     attributes: [
       {
@@ -197,7 +197,7 @@ export const allProductsData = [
   {
     id: 'caesar-salad',
     ItemName: 'Caesar Salad',
-    ItemIngredients: 'Romaine lettuce, croutons, bacon bits , Parmesan cheese and Caesar dressing.',
+    ItemIngredients: 'Romaine lettuce, Croutons, Bacon bits , Parmesan cheese and Caesar dressing.',
     Category: 'Salad',
     attributes: [ {
       id: 'size',
@@ -212,7 +212,7 @@ export const allProductsData = [
   {
     id: 'chicken-ceaser',
     ItemName: 'Chicken Ceaser Salad',
-    ItemIngredients: 'Romaine lettuce, Chicken, croutons, bacon bits , Parmesan cheese and Caesar dressing.',
+    ItemIngredients: 'Romaine lettuce, Chicken, Croutons, Bacon bits , Parmesan cheese and Caesar dressing.',
     Category: 'Salad',
     attributes: [
       {
@@ -229,7 +229,7 @@ export const allProductsData = [
   {
     id: 'greek-chicken',
     ItemName: 'Greek Chicken Salad',
-    ItemIngredients: 'Iceberg lettuce,Chicken, tomato, cucumber, Kalamata olives, feta cheese and Greek dressing',
+    ItemIngredients: 'Iceberg lettuce,Chicken, Tomato, Cucumber, Kalamata olives, Feta cheese and Greek dressing',
     Category: 'Salad',
     attributes: [ {
       id: 'size',

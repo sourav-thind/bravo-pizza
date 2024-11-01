@@ -33,7 +33,11 @@
   }
 
 
-
+  .mapHeading{
+    margin-left: 8rem;
+    color: white;
+    font-size: 3rem;
+}
 
 
 .homepage__contact h2 {
@@ -107,9 +111,15 @@ button{
 @media screen and (max-width: 700px) {
     .homepage__contact {
         justify-content: space-evenly;
-        gap: 5rem;
+        gap: 2rem;
     }
     .map-container{
-        height:400px
+        height:400px;
+        margin-top:0;
+    }
+    .mapHeading{
+        margin-left: 3rem;
+        color: white;
+        font-size: 2rem;
     }
 }

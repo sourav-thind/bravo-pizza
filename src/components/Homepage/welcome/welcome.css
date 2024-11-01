@@ -133,8 +133,8 @@ h5{
       }
        .Col2 {
         display: block;
-        width: 96vw;
-        margin: 2%;
+        width: 98vw;
+        margin: 1vw;
         grid-column: 1 / 1; 
         grid-row: 1 / 2; 
       }
@@ -142,7 +142,7 @@ h5{
         display: block;
         width: 140%;
         overflow: hidden;
-        left:-2vw;
+        margin:1vw;
         grid-column: 1/1; 
         grid-row: 2 / 2; 
        

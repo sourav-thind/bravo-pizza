@@ -12,6 +12,11 @@
   
    overflow-y: hidden;
   }
+ 
+.review-card::-webkit-scrollbar {
+  width: 0; /* Safari and Chrome */
+  height: 0; /* Safari and Chrome for horizontal scrollbar */
+}
   
   .slider-title {
     text-align: center;
