@@ -78,7 +78,7 @@ export const allProductsData = [
   {
     id: 'bbq-chicken-pizza',
     ItemName: 'BBQ Chicken Pizza',
-    ItemIngredients: ' BBQ sauce, mozzarella cheese, grilled chicken, red onions, cilantro',
+    ItemIngredients: 'BBQ Sauce, Mushroom, Red peppers, Red Onion, Chicke',
     Category: 'Pizza',
     attributes: [
       {
@@ -116,7 +116,7 @@ export const allProductsData = [
   {
     id: 'greek-pizza',
     ItemName: 'Greek Pizza',
-    ItemIngredients: ' mozzarella cheese, feta, mushroom, black olives, onions, tomato',
+    ItemIngredients: 'feta cheese, mushroom, black olives, onions, tomato',
     Category: 'Pizza',
     attributes: [
       {
@@ -180,7 +180,7 @@ export const allProductsData = [
   {
     id: 'greek-salad',
     ItemName: 'Greek Salad',
-    ItemIngredients: 'Tomatoes, cucumbers, olives, feta cheese, olive oil',
+    ItemIngredients: 'Iceberg lettuce, tomato, cucumber, Kalamata olives, feta cheese and Greek dressing',
     Category: 'Salad',
     attributes: [
       {
@@ -197,7 +197,7 @@ export const allProductsData = [
   {
     id: 'caesar-salad',
     ItemName: 'Caesar Salad',
-    ItemIngredients: 'Romaine lettuce, croutons, Parmesan cheese, Caesar dressing',
+    ItemIngredients: 'Romaine lettuce, croutons, bacon bits , Parmesan cheese and Caesar dressing.',
     Category: 'Salad',
     attributes: [ {
       id: 'size',
@@ -212,7 +212,7 @@ export const allProductsData = [
   {
     id: 'chicken-ceaser',
     ItemName: 'Chicken Ceaser Salad',
-    ItemIngredients: 'Chicken, lettuce, cheese, Caesar dressing',
+    ItemIngredients: 'Romaine lettuce, Chicken, croutons, bacon bits , Parmesan cheese and Caesar dressing.',
     Category: 'Salad',
     attributes: [
       {
@@ -229,7 +229,7 @@ export const allProductsData = [
   {
     id: 'greek-chicken',
     ItemName: 'Greek Chicken Salad',
-    ItemIngredients: 'Chicken,  lettuce, croutons, Parmesan cheese, Tomatoes, cucumbers, olives, feta cheese ',
+    ItemIngredients: 'Iceberg lettuce,Chicken, tomato, cucumber, Kalamata olives, feta cheese and Greek dressing',
     Category: 'Salad',
     attributes: [ {
       id: 'size',

@@ -128,18 +128,23 @@ h5{
       }
       
       .imageHolder {
-        display: block;
+        display: grid;
+        grid-template-rows: 1fr 1fr; 
       }
        .Col2 {
         display: block;
-        width: 100%;
+        width: 96vw;
         margin: 2%;
+        grid-column: 1 / 1; 
+        grid-row: 1 / 2; 
       }
       .Col1{
         display: block;
         width: 140%;
         overflow: hidden;
         left:-2vw;
+        grid-column: 1/1; 
+        grid-row: 2 / 2; 
        
       }
       .imgCover{
