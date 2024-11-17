@@ -2,9 +2,8 @@
 .homepage__contact {
     display: flex;
     flex-direction: column;
-    padding-top: 4rem;
+    padding: 4rem;
     gap: 1rem;
-    padding-bottom: 3rem;
     max-width: 1440px;
     width: 90%;
     margin: 0 auto;
@@ -35,7 +34,7 @@
 
   .mapHeading{
     margin-left: 8rem;
-    color: white;
+    color: var(--main-text-red);
     font-size: 3rem;
 }
 
@@ -112,6 +111,7 @@ button{
     .homepage__contact {
         justify-content: space-evenly;
         gap: 2rem;
+        padding: 4rem 0 3rem 0
     }
     .map-container{
         height:400px;

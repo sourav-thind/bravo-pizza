@@ -26,7 +26,7 @@ const WelcomeSection = () => {
         </h2>
 
         <p>
-          Bravo Pizza is a cherished community cornerstone in Riverview, renowned for its authentic, mouth-watering pizzas and a warm, welcoming atmosphere. Under new ownership, we've preserved the beloved traditional recipes respecting the legacy of our previous owners. Our commitment extends beyond great food, with a focus on sustainability through local sourcing and eco-friendly practices. Bravo Pizza is more than just a restaurant; it's a place where families gather, memories are made, and community ties are strengthened. Join us for a slice of happiness and experience firsthand why we are a local favorite!</p>
+          Bravo Pizza is a cherished community cornerstone in Riverview, renowned for its authentic, mouth-watering pizzas and a warm, welcoming atmosphere. Under new ownership, we've preserved the beloved traditional recipes respecting the legacy of our previous owners. Our commitment extends beyond great food, with a focus on sustainability through local sourcing and eco-friendly practices. Bravo Pizza is more than just a restaurant; it's a place where families gather, memories are made, and community ties are strengthened. Join us for a slice of happiness and experience firsthand why <span className='descriptionend'>we are a local favorite!</span></p>
       </motion.section>
       <div className="welcome__cover">
         <div className='imageHolder' >
